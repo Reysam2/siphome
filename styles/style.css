@@ -2,6 +2,7 @@
   --primary-clr-blue: #1c57c9;
   --primary-clr-white: #ffffff;
   --primary-clr-green: #3acf6e;
+  --primary-clr-grey: #606B86;
   --outline: 0.2rem solid red;
 }
 
@@ -115,4 +116,41 @@
   display: flex;
   border-bottom-right-radius: 30rem;
   background-color: var(--primary-clr-blue);
+}
+
+/* THREAT AWARENESS CSS */
+.main__threat-info-blk {
+  margin-top: 10rem;
+  width: 100%;
+  min-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-clr-white);
+}
+
+
+.threat__info {
+  height: 25rem;
+  width: 95%;
+  display: flex;  
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.threat__info-txt {
+ text-align: center;
+ font-weight: 600;
+ color: var(--primary-clr-grey);
+ line-height: 3.2rem;
+}
+
+
+.main__threat-info-img-blk {
+
+}
+
+.threat__info-img-blk {
+
 }

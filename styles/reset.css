@@ -11,8 +11,8 @@ html {
 }
 
 body {
-  font-size: 1.6em;
-  background-color: #f3f3f3;
+  font-size: 1.8em;
+  background-color: var(--primary-clr-white);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
