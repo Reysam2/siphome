@@ -147,12 +147,6 @@
   line-height: 3.2rem;
 }
 
-.main__threat-info-img-blk {
-}
-
-.threat__info-img-blk {
-}
-
 /* SMART HOME FEATURES SECTION  */
 .home__features-info-blk {
   width: 100%;
@@ -182,7 +176,7 @@
 }
 
 .home__features-info-heading {
-  margin: 2rem 0;
+  margin: 1.8rem 0;
   font-size: 3.2rem;
   color: var(--primary-clr-black);
   font-weight: bold;
@@ -224,3 +218,66 @@
   line-height: 2rem;
   color: var(--primary-clr-grey);
 }
+
+/* SMART HOME UPGRADE SECTION */
+/* UPGRADE INFO */
+.home__upgrade-blk {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-clr-white);
+  margin-bottom: 6rem;
+}
+
+.home__upgrade-info-blk {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upgrade__info-blk {
+  width: 95%;
+  text-align: center;
+}
+
+.upgrade__info-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-clr-blue);
+  letter-spacing: 1rem;
+}
+
+.upgrade__info-heading {
+  margin: 1.8rem 0;
+  font-size: 3.2rem;
+  color: var(--primary-clr-black);
+  font-weight: bold;
+}
+
+/* UPGRADE PHOTO */
+
+.home__upgrade-photo-blk {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-clr-white);
+  margin-bottom: 6rem;
+
+}
+
+.upgrade__photo-blk {
+ width: 100%; 
+ border: var(--outline); 
+}
+
+.upgrade__photo {
+  width: 100%; 
+  
+} 
