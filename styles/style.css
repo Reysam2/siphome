@@ -4,6 +4,8 @@
   --primary-clr-white: #ffffff;
   --primary-clr-green: #3acf6e;
   --primary-clr-grey: #606b86;
+  --secondary-clr-grey: #606c84;
+  --box-shadow-grey: #97979744;
   --primary-clr-black: #262b36;
   --outline: 0.2rem solid red;
 }
@@ -272,7 +274,7 @@
 }
 
 .upgrade__photo-blk {
-  width: 100%; 
+  width: 100%;
   z-index: 3;
 }
 
@@ -287,14 +289,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-clr-blue); 
+  background-color: var(--secondary-clr-blue);
   margin-top: -20rem;
   z-index: 2;
 }
 
 .upgrade {
   width: 90%;
-  height: 25rem; 
+  height: 25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,7 +312,7 @@
 .upgrade__img-blk {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 
 .upgrade__title {
@@ -323,6 +325,7 @@
   text-align: center;
   color: var(--primary-clr-white);
   font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .upgrade__pattern-blk {
@@ -332,4 +335,117 @@
   justify-content: flex-end;
   border-bottom-left-radius: 30rem;
   background-color: var(--primary-clr-blue);
+}
+
+/* SMART HOME SERVICE SECTION  */
+.home__service-blk {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18rem 0 10rem;
+}
+
+.home__service-info-blk {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__info {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.service__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-clr-blue);
+  letter-spacing: 1rem;
+}
+
+.service__heading {
+  margin: 2rem 0 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.2rem;
+}
+
+.service__txt {
+  text-align: center;
+  line-height: 2.8rem;
+  color: var(--primary-clr-grey);
+}
+
+.service__img {
+  margin-bottom: 5rem;
+}
+
+/* SERVICE CAROUSEL  */
+.service__carousel-blk {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel-blk {
+  width: 100%;
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 5%;
+  column-gap: 1.6rem;
+}
+
+.carousel__item {
+  height: 9.6rem;
+  min-width: 75%;
+  background: var(--primary-clr-white);
+  border-radius: 1.6rem;
+  box-shadow: 0.01rem 0.01rem 2rem var(--box-shadow-grey);
+  display: flex;
+  align-items: center;
+  padding: 7%;
+}
+
+.carousel__indicator-blk {
+  width: 60%;
+  min-height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indicator-blk {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+.indicator {
+  background: var(--secondary-clr-grey);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  opacity: 20%;
+}
+
+.indicator:nth-child(2) {
+  background: var(--primary-clr-blue);
+  opacity: 100%;
 }
