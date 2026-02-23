@@ -2,6 +2,7 @@
   --primary-clr-blue: #1c57c9;
   --secondary-clr-blue: #2053d1;
   --primary-clr-white: #ffffff;
+  --secondary-clr-white: #ecf0f7;
   --primary-clr-green: #3acf6e;
   --primary-clr-grey: #606b86;
   --secondary-clr-grey: #606c84;
@@ -210,8 +211,9 @@
 }
 
 .feature-heading {
-  margin: 2rem 0 1.5rem;
+  margin: 1.5rem 0;
   font-weight: bold;
+  color: var(--primary-clr-black)
 }
 
 .feature-txt {
@@ -377,6 +379,7 @@
   font-weight: bold;
   text-align: center;
   font-size: 3.2rem;
+  color: var(--primary-clr-black)
 }
 
 .service__txt {
@@ -448,4 +451,48 @@
 .indicator:nth-child(2) {
   background: var(--primary-clr-blue);
   opacity: 100%;
+}
+
+/* SMART HOME TESTIMONIAL SECTION */
+
+.home__testimonial-blk {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 18rem 0 10rem;
+}
+
+.testimonial__info-blk {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__info {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6.4rem;
+}
+
+.testimonial__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-clr-blue);
+  letter-spacing: 1rem;
+}
+
+.testimonial__heading {
+  margin: 1.7rem 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--primary-clr-black)
 }
