@@ -463,7 +463,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16rem 0 10rem;
+  padding: 16rem 0 7.5rem;
   background-color: var(--secondary-clr-white);
 }
 
@@ -521,7 +521,6 @@
   align-items: center;
   column-gap: 1.6rem;
   overflow-x: scroll;
-  margin-bottom: 4.8rem;
   position: relative;
 }
 
@@ -568,4 +567,138 @@
   position: absolute;
   bottom: 2.8rem;
   right: 2.5rem;
+}
+
+.card-carousel__indicator-blk {
+  margin-top: -2.5rem;
+}
+
+/* SMART HOME CONTACT SECTION */
+
+.home__contact-info-blk {
+  max-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16rem 0 10rem;
+  background-color: var(--primary-clr-white);
+}
+
+.contact__info-blk {
+  min-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contact__info {
+  max-width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-clr-blue);
+  letter-spacing: 1rem;
+}
+
+.contact__heading {
+  margin: 1.7rem 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.2rem;
+  color: var(--primary-clr-black);
+}
+
+.contact__img-blk {
+}
+
+.contact__img {
+}
+
+.contact__form-blk {
+}
+
+/*SMART HOME CONTACT FORM */
+
+.contact__form-blk {
+  min-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-clr-white);
+  padding: 5%;
+  margin-top: 6.4rem;
+}
+
+.form {
+  min-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.form__group {
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.form__group label {
+  line-height: 2.4;
+  font-size: 1.5rem;
+  color: var(--primary-clr-black);
+}
+
+.form__group input {
+  width: 31.5rem;
+  height: 4.8rem;
+  padding: 2%;
+  margin-bottom: 1.6rem;
+}
+
+.form__group-textarea {
+  margin-bottom: 4rem;
+}
+
+.form__textarea {
+  max-height: 12rem;
+  max-width: 31.5rem;
+  min-height: 12rem;
+  min-width: 31.5rem;
+}
+
+.form__group-blk {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form__submit-btn {
+  width: 9rem;
+  height: 4rem;
+  background-color: var(--primary-clr-green);
+  font-weight: bold;
+  color: var(--primary-clr-white);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border:none;
+  border-radius: 0.4rem;
+  box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
 }
