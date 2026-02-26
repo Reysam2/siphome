@@ -698,7 +698,70 @@
   color: var(--primary-clr-white);
   padding: 1rem 2rem;
   font-size: 1.5rem;
-  border:none;
+  border: none;
   border-radius: 0.4rem;
   box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
+}
+
+/* FOOTER */
+/*FOOTER-ADDRESS*/
+
+.footer {
+  max-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-clr-white);
+}
+
+.footer__address-blk {
+  min-width: 100%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.address__info {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.address__heading {
+  margin: 1.7rem 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-clr-black);
+}
+
+.address__txt {
+  text-align: center;
+  line-height: 3rem;
+  color: var(--primary-clr-black);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.address__tel,
+.address__email {
+  font-weight: bold;
+}
+
+.address__tel {
+  margin-bottom: 1rem;
+}
+
+.address__tel a,
+.address__email a {
+  color: var(--primary-clr-black);
+  font-size: 2rem;
+  text-decoration: none;
 }
