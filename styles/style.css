@@ -346,7 +346,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 18rem;
+  padding-top: 18rem;
 }
 
 .home__service-info-blk {
@@ -618,14 +618,14 @@
   color: var(--primary-clr-black);
 }
 
-.contact__img-blk {
+/* .contact__img-blk {
 }
 
 .contact__img {
 }
 
 .contact__form-blk {
-}
+} */
 
 /*SMART HOME CONTACT FORM */
 
@@ -735,7 +735,7 @@
 }
 
 .address__heading {
-  margin: 1.7rem 0;
+  margin: 4rem 0 1rem;
   font-weight: bold;
   text-align: center;
   font-size: 2rem;
@@ -764,4 +764,54 @@
   color: var(--primary-clr-black);
   font-size: 2rem;
   text-decoration: none;
+  font-weight: 500;
+}
+
+/* FOOTER NAVIGATION */
+
+.footer__nav-blk {
+  width: 100%;
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-clr-white);
+}
+
+.nav__info {
+  min-width: 80%;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--primary-clr-black);
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.125s ease-in-out;
+}
+
+.nav__link:active {
+  color: var(--primary-clr-blue);
 }
