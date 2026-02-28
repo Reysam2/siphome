@@ -11,6 +11,8 @@
   --outline: 0.2rem solid red;
 }
 
+/* MOBILE → DEFAULT */
+
 /* HEADER */
 .header__logo--menu {
   width: 100%;
@@ -927,4 +929,21 @@
 .copyright__txt {
   color: var(--primary-clr-black);
   vertical-align: bottom;
+}
+/*TABLET */
+
+@media (min-width: 768px) {
+  /* HEADER */
+.header__logo--menu {
+  justify-content: space-between;
+  padding: 0 3.1rem
+}
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+}
+
+/* LARGE DESKTOP*/
+@media (min-width: 1280px) {
 }
