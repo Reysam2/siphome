@@ -930,70 +930,88 @@
   color: var(--primary-clr-black);
   vertical-align: bottom;
 }
+
 /*TABLET */
 
 @media (min-width: 768px) {
   /* HEADER */
-.header__logo--menu {
-  justify-content: space-between;
-  padding: 0 3.1rem
-}
+  .header__logo--menu {
+    justify-content: space-between;
+    padding: 0 3.1rem;
+  }
 
-.hero-intro__heading--info-blk {
-  border-bottom-right-radius: 24rem; 
-} 
- 
-/* MAIN */
-/* CALL TO ACTION SECTION */
- 
-.hero-intro__heading-blk {
-  max-width: 80%; 
-  margin-bottom: 3.6rem; 
-}
+  .hero-intro__heading--info-blk {
+    border-bottom-right-radius: 24rem;
+  }
 
+  /* MAIN */
+  /* CALL TO ACTION SECTION */
 
-.hero-intro__heading-txt {
-  font-size: 5.5rem; 
-  line-height: 7.4rem; 
-}
- 
-.hero-intro__info-blk {
-  max-width: 90%; 
-  min-height: 10rem;  
-  margin-bottom: 3.2rem;
-  
-}
+  .hero-intro__heading-blk {
+    max-width: 80%;
+    margin-bottom: 3.6rem;
+  }
 
-.hero-intro__button-blk {
-  max-width: 80% ;
-}
+  .hero-intro__heading-txt {
+    font-size: 5.5rem;
+    line-height: 7.4rem;
+  }
 
-.hero-intro__info-txt { 
-  font-size: 2rem;
-  text-align: center;
-  line-height: 3.2rem;
-}
- 
-.hero-intro__pattern-blk {
-  height: 10rem;
-  width: 60%;
-  display: flex;
-  border-bottom-right-radius: 0rem;
-  background-color: var(--primary-clr-blue);
-  margin-top: -13rem;
-  z-index: 0;
-}
+  .hero-intro__info-blk {
+    max-width: 90%;
+    min-height: 10rem;
+    margin-bottom: 3.2rem;
+  }
 
-/* THREAT AWARENESS CSS */ 
-.threat__info { 
-  width: 75%; 
-  margin-bottom: 3rem;
-}
+  .hero-intro__button-blk {
+    max-width: 80%;
+  }
 
-.threat__info-txt {
-  font-size: 2rem; 
-}
+  .hero-intro__info-txt {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3.2rem;
+  }
 
+  .hero-intro__pattern-blk {
+    height: 10rem;
+    width: 60%;
+    display: flex;
+    border-bottom-right-radius: 0rem;
+    background-color: var(--primary-clr-blue);
+    margin-top: -13rem;
+    z-index: 0;
+  }
+
+  /* THREAT AWARENESS CSS */
+  .threat__info {
+    width: 75%;
+    margin-bottom: 3rem;
+  }
+
+  .threat__info-txt {
+    font-size: 2rem;
+  }
+
+  /* SMART HOME FEATURES SECTION  */
+  .home__features-info {
+    width: 85%;
+    margin-top: 5rem;
+  }
+
+  .home__features-info-heading {
+    margin: 2.4rem 0;
+    font-size: 4.2rem;
+  }
+
+  /* HOME FEATURES */
+  .home__features-blk {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 6.4rem;
+    column-gap: 2rem;
+  }
 }
 
 /* DESKTOP */
