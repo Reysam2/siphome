@@ -983,6 +983,17 @@
   margin-top: -13rem;
   z-index: 0;
 }
+
+/* THREAT AWARENESS CSS */ 
+.threat__info { 
+  width: 75%; 
+  margin-bottom: 3rem;
+}
+
+.threat__info-txt {
+  font-size: 2rem; 
+}
+
 }
 
 /* DESKTOP */
