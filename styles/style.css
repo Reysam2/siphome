@@ -1046,7 +1046,7 @@
     justify-items: center;
     column-gap: 4.8rem;
     margin-top: -28rem;
-    padding: 30rem 0 14rem; 
+    padding: 30rem 0 14rem;
     border-bottom-left-radius: 30rem;
   }
 
@@ -1072,9 +1072,41 @@
     height: 15rem;
     width: 80%;
     display: flex;
-    border-bottom-left-radius: 30rem; 
+    border-bottom-left-radius: 30rem;
     z-index: 5;
-    align-self: flex-end; 
+    align-self: flex-end;
+  }
+
+  /* SMART HOME SERVICE SECTION  */
+  .home__service-info-blk {
+    margin-bottom: 6.4rem;
+  }
+
+  .service__info {
+    width: 70%;
+  }
+
+  .service__heading {
+    margin: 2rem 0 2.4rem;
+    font-size: 4.2rem;
+  }
+
+  .service__img {
+    margin-bottom: 5rem;
+  }
+
+  .service__img-1 {
+    display: none;
+  }
+
+  /* SERVICE CAROUSEL  */
+
+  .carousel-blk {
+    margin-bottom: 4rem;
+  }
+
+  .carousel__item {
+    min-width: 31.5rem;
   }
 }
 
