@@ -1173,6 +1173,36 @@
   .card-carousel__indicator-blk {
     margin-top: -2.5rem;
   }
+
+  /* SMART HOME CONTACT SECTION */
+
+  .contact__info-blk {
+    margin-bottom: 4rem;
+  }
+
+  .contact__info {
+    max-width: 85%;
+  }
+
+  .contact__heading {
+    font-size: 4.2rem;
+  }
+
+  .contact__img-1 {
+    display: none;
+  }
+
+  /*SMART HOME CONTACT FORM */
+
+  .contact__form-blk {
+    margin: 3.2rem 0 12rem;
+  }
+
+  .form {
+    min-width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* DESKTOP */
