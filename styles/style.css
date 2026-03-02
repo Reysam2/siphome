@@ -1092,7 +1092,7 @@
   }
 
   .service__img {
-    margin-bottom: 5rem;
+    margin-bottom: 8.4rem;
   }
 
   .service__img-1 {
@@ -1107,6 +1107,71 @@
 
   .carousel__item {
     min-width: 31.5rem;
+  }
+
+  /* SMART HOME TESTIMONIAL SECTION */
+
+  .testimonial__info-blk {
+    min-width: 100%;
+    min-height: 25rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial__info {
+    max-width: 75%;
+  }
+
+  .testimonial__heading {
+    margin: 1.7rem 0;
+    font-size: 4.2rem;
+  }
+
+  /* USER TESTIMONIAL CARD */
+
+  .testimonial__card-blk {
+    padding-bottom: 2rem;
+  }
+
+  .testimonial__card-carousel {
+    column-gap: 5.1rem;
+    margin-bottom: 4.3rem;
+  }
+
+  .testimonial__card {
+    min-width: 54rem;
+    min-height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5%;
+  }
+
+  .card__user-img {
+    position: absolute;
+    top: -3rem;
+    right: -1rem;
+  }
+
+  .card__user-quote {
+    text-align: left !important;
+    line-height: 3.2rem;
+    margin-top: 3.4rem;
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .card__user-name {
+    margin-top: 4.2rem;
+  }
+
+  .card__quote-design {
+    bottom: 4.2rem;
+    right: 4.2rem;
+  }
+
+  .card-carousel__indicator-blk {
+    margin-top: -2.5rem;
   }
 }
 
