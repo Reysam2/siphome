@@ -1012,6 +1012,70 @@
     margin-top: 6.4rem;
     column-gap: 2rem;
   }
+
+  /* SMART HOME UPGRADE SECTION */
+  /* UPGRADE INFO */
+  .upgrade__info-blk {
+    max-width: 45%;
+  }
+
+  .upgrade__info-heading {
+    margin: 1.7rem 0;
+    font-size: 4.2rem;
+  }
+
+  /* UPGRADE PHOTO */
+  .home__upgrade-photo-blk {
+    margin-bottom: 6.2rem;
+  }
+
+  .upgrade__photo {
+    min-width: 100%;
+    display: none;
+  }
+  .upgrade__photo-tablet {
+    width: 100%;
+  }
+
+  /* UPGRADABLE */
+  .upgrade-blk {
+    min-height: 55rem;
+    display: grid;
+    grid-template-columns: repeat(2, 30.5rem);
+    place-content: center;
+    justify-items: center;
+    column-gap: 4.8rem;
+    margin-top: -28rem;
+    padding: 30rem 0 14rem; 
+    border-bottom-left-radius: 30rem;
+  }
+
+  .upgrade {
+    min-width: 37%;
+    margin-bottom: 3rem;
+  }
+
+  .upgrade:first-child {
+    margin-top: 0rem;
+  }
+
+  .upgrade__three-blk {
+    grid-column: 2/3;
+  }
+  .upgrade__four-blk {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .upgrade__pattern-blk {
+    margin-top: -15rem;
+    height: 15rem;
+    width: 80%;
+    display: flex;
+    border-bottom-left-radius: 30rem; 
+    z-index: 5;
+    align-self: flex-end; 
+  }
 }
 
 /* DESKTOP */
