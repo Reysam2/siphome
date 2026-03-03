@@ -1325,6 +1325,18 @@
     margin-bottom: 1.6rem;
     align-items: center;
   }
+
+  /* FOOTER COPYRIGHT */
+  .footer__copyright-blk {
+    margin-top: 7.7rem;
+    grid-column: 1/5;
+  }
+
+  .copyright__info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
 }
 
 /* DESKTOP */
