@@ -1511,9 +1511,9 @@
     margin-top: 7rem;
     width: 55%;
     min-height: 4rem;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background: var(--primary-clr-white);
   }
@@ -1522,9 +1522,9 @@
     height: 25rem;
     width: 100%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     margin-left: 20.7rem;
-    margin-bottom:15rem;
+    margin-bottom: 15rem;
   }
 
   .threat__info-txt {
@@ -1537,6 +1537,76 @@
 
   .threat__info-img-mobile {
     display: none;
+  }
+
+  .threat-img-blk__mobile-tablet {
+    display: none;
+  }
+
+  /* THREAT FEATURE CONTAINER */
+  .threat-feat__container {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    justify-items: center;
+  }
+
+  /* SMART HOME FEATURES SECTION  */
+
+  .home__features-blk {
+    width: 46%;
+    min-height: 20rem;
+  }
+  .home__features-info-blk {
+    width: 100%;
+    min-height: 25rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--primary-clr-white);
+    margin-bottom: 0; 
+  }
+
+  .home__features-info {
+    width: 80%;
+    text-align: start;
+    height: 25rem;
+    align-items: start;
+    justify-content: center;
+    margin-top: 0%;
+  }
+
+  .home__features-info-heading {
+    margin: 2.4rem 0;
+    font-size: 4.2rem;
+  }
+
+  .home__features-info-txt {
+    line-height: 2.8rem;
+  }
+
+  /* HOME FEATURES */
+
+  .home__features-blk {
+    width: 100%;
+    min-height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 32rem);
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    margin-top: 5.1rem;
+    column-gap: 10rem;
+    row-gap: 4.5rem;
+  }
+
+  .home__feature-container {
+    align-items: start;
+    margin-bottom: 0;
+  }
+
+  .feature-txt {
+    text-align: start;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
   }
 }
 
