@@ -1696,7 +1696,7 @@
     grid-row: 1/2;
     margin-top: 6rem;
     gap: 3rem;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
   }
 
   .upgrade {
@@ -1755,6 +1755,99 @@
     grid-row: 1/2;
     place-self: flex-end;
     margin-right: 1rem;
+  }
+
+  /* SMART HOME SERVICE SECTION  */
+  .home__service-blk {
+    width: 100%;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16rem;
+  }
+
+  .home__service-info-blk {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service__info {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9.6rem;
+  }
+
+  .service__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-clr-blue);
+    letter-spacing: 1rem;
+  }
+
+  .service__heading {
+    margin: 2rem 0 2.4rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4.2rem;
+    line-height: 6.4rem;
+    color: var(--primary-clr-black);
+  }
+
+  .service__txt {
+    text-align: center;
+    line-height: 2.8rem;
+    color: var(--primary-clr-grey);
+  }
+
+  .service__img {
+    margin-bottom: 12.8rem;
+  }
+
+  /* SERVICE CAROUSEL  */
+  .service__carousel-blk {
+    width: 100%;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--secondary-clr-white);
+  }
+
+  .carousel-blk {
+    width: 100%;
+    min-height: 12rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    overflow-x: scroll;
+    padding: 5%;
+    gap: 4rem;
+    background-color: var(--primary-clr-white); 
+  }
+
+  .carousel__item {
+    height: 9.6rem;
+    min-width: 75%;
+    background: var(--primary-clr-white);
+    border-radius: 1.6rem;
+    box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
+    display: flex;
+    align-items: center;
+    padding: 7%; 
+  }
+
+  .carousel__indicator-blk,
+  .indicator-blk {
+    display: none;
   }
 }
 
