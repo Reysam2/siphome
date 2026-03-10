@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box; 
+  /* outline: var(--outline); */
 }
 
 html {
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  max-width: 100vw;
+  max-width: 100%;
   font-size: 1.8em;
   background-color: var(--primary-clr-white);
   font-family: "Inter", sans-serif;
