@@ -1987,7 +1987,7 @@
   .contact__heading {
     font-size: 4.2rem;
     line-height: 6.4rem;
-    text-align:left;
+    text-align: left;
   }
 
   .contact__img-blk {
@@ -2013,6 +2013,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 0rem;
+    margin-left: -10rem;
   }
 
   .form__group {
@@ -2027,6 +2028,115 @@
 
   .form__group label {
     font-size: 1.5rem;
+  }
+
+  /* FOOTER */
+  /*FOOTER-ADDRESS*/
+
+  .footer {
+    max-width: 100%;
+    min-height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 30rem);
+    grid-template-areas: "address nav about social";
+
+    background-color: var(--primary-clr-white);
+    column-gap: 2rem;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .footer__address-blk {
+    min-width: 100%;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    grid-area: address;
+    margin-left: 0rem;
+  }
+
+  .address__txt {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  /* FOOTER NAVIGATION */
+
+  .footer__nav-blk {
+    margin-top: 0rem;
+    grid-area: nav;
+  }
+
+  .nav__info {
+    min-width: 80%;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .nav__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: start;
+  }
+
+  .nav__info-heading {
+    margin-top: 0;
+  }
+
+  /* FOOTER ABOUT */
+  .footer__about-blk {
+    margin-top: 0rem;
+    grid-area: about;
+  }
+
+  .about__info {
+    align-items: start;
+    justify-content: start;
+  }
+  .about__info-heading {
+    margin: 0rem 0 1.6rem;
+    font-weight: bold;
+    color: var(--primary-clr-black) !important;
+  }
+
+  /* FOOTER SOCIAL */
+  .footer__social-blk {
+    background-color: var(--primary-clr-white);
+    margin-top: 0rem;
+    grid-area: social;
+  }
+
+  .social__info-blk {
+    min-width: 80%;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: var(--primary-clr-white);
+    margin-top: 1rem;
+  }
+
+  .social__info-heading-blk {
+    height: 3rem;
+    min-width: 50%;
+  }
+  .social__info-heading {
+    margin-top: 0;
+  }
+
+  /* FOOTER COPYRIGHT */
+  .footer__copyright-blk {
+    margin-top: 7.7rem;
+    grid-column: 1/5;
+    justify-content: end;
   }
 }
 
