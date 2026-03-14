@@ -1343,13 +1343,12 @@
 @media (min-width: 1024px) {
   /* HEADER */
   .header__logo--menu {
-    min-width: 20%;
+    width: 100%;
     height: 13rem;
     background-color: var(--primary-clr-blue);
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 0 10.5rem 2rem;
+    align-items: flex-end; 
   }
 
   .menu__button {
@@ -1360,30 +1359,32 @@
   }
 
   .header__nav-blk {
-    width: 100%;
+    min-width: 70%;
     min-height: 10rem;
     background-color: var(--primary-clr-blue);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-end;
     padding-bottom: 2rem;
   }
 
   .header__nav {
-    margin-left: 12rem;
+    /* margin-left: 12rem; */
   }
 
   .header__nav-list {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
+    margin-bottom: -1rem;
+    gap: clamp(2rem, 2.5vw, 4rem);
   }
 
   .header__nav-link {
-    width: 80%;
+    width: 100%;
     color: var(--primary-clr-white);
     text-decoration: none;
     font-size: 1.8rem;
-    margin-right: 6rem;
   }
 
   .header__nav-link[href="#home"] {
@@ -1397,7 +1398,8 @@
     flex-direction: row;
     align-self: flex-end;
     justify-self: flex-end;
-    margin-left: 12rem;
+    margin-left: clamp(7rem, 10rem, 12rem);
+    gap: clamp(2rem, 2.5vw, 4rem);
   }
 
   .header__nav-link[href="#signin"] {
