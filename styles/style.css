@@ -1013,6 +1013,21 @@
     font-size: 2rem;
   }
 
+
+  .threat__info-img-blk,
+.threat__info-img-mobile {
+    display: none;
+  }
+ 
+   .threat__info-img-blk:has(.threat__info-img-tablet){
+    display: block;
+  }
+
+ 
+  .threat-feat__container {
+    /* display: none */
+  }
+
   /* SMART HOME FEATURES SECTION  */
   .home__features-info {
     width: 85%;
@@ -1555,6 +1570,10 @@
   .threat-img-blk__mobile-tablet {
     display: none;
   }
+  
+    .threat__info-img-blk {
+      display: block;
+    }
 
   /* THREAT FEATURE CONTAINER */
   .threat-feat__container {
