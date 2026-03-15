@@ -1115,6 +1115,11 @@
     border-bottom-left-radius: 30rem;
     z-index: 5;
     align-self: flex-end;
+    margin-right:1rem;
+  }
+
+  .upgrade__pattern-desktop {
+    display: none;
   }
 
   /* SMART HOME SERVICE SECTION  */
