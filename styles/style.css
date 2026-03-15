@@ -955,6 +955,10 @@
     border-bottom-right-radius: 24rem;
   }
 
+  .header__nav-blk {
+    display: none
+  }
+
   /* MAIN */
   /* CALL TO ACTION SECTION */
 
