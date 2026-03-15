@@ -988,6 +988,11 @@
     line-height: 3.2rem;
   }
 
+  .hero__desktop-img-blk,   
+  .hero-intro__pattern-svg-desktop {
+    display:none;
+  }
+
   .hero-intro__pattern-blk {
     height: 10rem;
     width: 60%;
