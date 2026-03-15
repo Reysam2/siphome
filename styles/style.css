@@ -956,7 +956,7 @@
   }
 
   .header__nav-blk {
-    display: none
+    display: none;
   }
 
   /* MAIN */
@@ -988,9 +988,9 @@
     line-height: 3.2rem;
   }
 
-  .hero__desktop-img-blk,   
+  .hero__desktop-img-blk,
   .hero-intro__pattern-svg-desktop {
-    display:none;
+    display: none;
   }
 
   .hero-intro__pattern-blk {
@@ -1013,17 +1013,15 @@
     font-size: 2rem;
   }
 
-
   .threat__info-img-blk,
-.threat__info-img-mobile {
+  .threat__info-img-mobile {
     display: none;
   }
- 
-   .threat__info-img-blk:has(.threat__info-img-tablet){
+
+  .threat__info-img-blk:has(.threat__info-img-tablet) {
     display: block;
   }
 
- 
   .threat-feat__container {
     /* display: none */
   }
@@ -1050,6 +1048,9 @@
 
   /* SMART HOME UPGRADE SECTION */
   /* UPGRADE INFO */
+  .home__upgrade-blk {
+    margin-top: 10rem;
+  }
   .upgrade__info-blk {
     max-width: 45%;
   }
@@ -1070,6 +1071,10 @@
   }
   .upgrade__photo-tablet {
     width: 100%;
+  }
+
+  .upgrade__photo-desktop {
+    display: none;
   }
 
   /* UPGRADABLE */
@@ -1570,10 +1575,10 @@
   .threat-img-blk__mobile-tablet {
     display: none;
   }
-  
-    .threat__info-img-blk {
-      display: block;
-    }
+
+  .threat__info-img-blk {
+    display: block;
+  }
 
   /* THREAT FEATURE CONTAINER */
   .threat-feat__container {
@@ -1654,7 +1659,7 @@
     place-content: start;
     place-items: start;
     margin-top: 22rem;
-    position: relative; 
+    position: relative;
   }
 
   .home__upgrade-info-blk {
@@ -1718,15 +1723,14 @@
     width: 100%;
     height: 120rem;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: var(--secondary-clr-blue);
     z-index: 0;
     grid-column: 2/3;
     grid-row: 1/3;
     margin-top: 6rem;
-    gap: 3rem;  
-    
+    gap: 3rem;
   }
 
   .upgrade {
@@ -1740,7 +1744,7 @@
     justify-items: start;
     place-content: flex-start;
     column-gap: 2rem;
-     z-index: 6;
+    z-index: 6;
   }
 
   .upgrade:first-child {
@@ -1753,28 +1757,26 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    grid-column: 1/2; 
+    grid-column: 1/2;
   }
 
   .upgrade__photo-desktop {
     display: flex;
-        position: absolute;
-    top: 0rem; 
+    position: absolute;
+    top: 0rem;
   }
 
-    .upgrade__photo-tablet {
+  .upgrade__photo-tablet {
     display: none;
-
   }
 
-
-  @media (min-width:1020px) and (max-width:1300px) {
-      .upgrade__photo-tablet {
-        display: flex
-      }
-        .upgrade__photo-desktop {
-          display:none;
-        }
+  @media (min-width: 1020px) and (max-width: 1300px) {
+    .upgrade__photo-tablet {
+      display: flex;
+    }
+    .upgrade__photo-desktop {
+      display: none;
+    }
   }
 
   .upgrade__title {
