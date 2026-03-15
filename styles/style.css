@@ -1347,8 +1347,9 @@
     height: 13rem;
     background-color: var(--primary-clr-blue);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
+    padding: 0;
   }
 
   .menu__button {
@@ -1556,7 +1557,7 @@
   /* SMART HOME FEATURES SECTION  */
 
   .home__features-blk {
-    width: 46%;
+    width: 90%;
     min-height: 20rem;
   }
   .home__features-info-blk {
@@ -1593,11 +1594,11 @@
     width: 100%;
     min-height: 25rem;
     display: grid;
-    grid-template-columns: repeat(2, 32rem);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     align-items: center;
     margin-top: 5.1rem;
-    column-gap: 10rem;
+    column-gap: 4rem;
     row-gap: 4.5rem;
   }
 
@@ -1757,7 +1758,7 @@
     grid-column: 3/6;
     grid-row: 1/2;
     place-self: flex-end;
-    margin-right: 1rem;
+    margin-right: 0rem;
   }
 
   /* SMART HOME SERVICE SECTION  */
