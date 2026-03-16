@@ -129,6 +129,11 @@
   background-color: var(--primary-clr-blue);
 }
 
+.hero-intro__pattern-svg-desktop,
+.hero__desktop-img {
+  display: none;
+}
+
 /* THREAT AWARENESS CSS */
 .main__threat-info-blk {
   margin-top: 7rem;
