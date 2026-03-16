@@ -359,6 +359,10 @@
   border-bottom-left-radius: 30rem;
   background-color: var(--primary-clr-blue);
 }
+ 
+.upgrade__pattern-desktop {
+  display: none;
+} 
 
 /* SMART HOME SERVICE SECTION  */
 .home__service-blk {
@@ -411,6 +415,10 @@
 
 .service__img {
   margin-bottom: 5rem;
+}
+
+.service__img-2 {
+  display: none;
 }
 
 /* SERVICE CAROUSEL  */
