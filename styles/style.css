@@ -161,6 +161,11 @@
   line-height: 3.2rem;
 }
 
+.main__threat-info-img-blk.threat-img-blk__desktop,
+.threat__info-img-tablet {
+  display: none;
+}
+
 /* SMART HOME FEATURES SECTION  */
 .home__features-info-blk {
   width: 100%;
