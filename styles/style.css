@@ -1581,7 +1581,7 @@
     margin-top: 7rem;
     width: 55%;
     min-height: 4rem;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
@@ -1594,7 +1594,7 @@
     display: flex;
     align-items: center;
     margin-left: 20.7rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   .threat__info-txt {
@@ -1609,13 +1609,26 @@
     display: none;
   }
 
-  .threat-img-blk__mobile-tablet {
+   
+  .threat__info-img-blk {
+    display: flex; 
+    margin-top: 9rem;
+  }
+
+  .threat__info-img-tablet {
     display: none;
   }
 
-  .threat__info-img-blk {
-    display: block;
+
+  .main__threat-info-img-blk.threat-img-blk__mobile-tablet {
+    display: none;
   }
+
+.main__threat-info-img-blk.threat-img-blk__desktop,
+.threat__info-img-tablet {
+  display: flex;
+}
+
 
   /* THREAT FEATURE CONTAINER */
   .threat-feat__container {
