@@ -300,6 +300,11 @@
   width: 100%;
 }
 
+.upgrade__photo-desktop,
+.upgrade__photo-tablet {
+  display: none;
+}
+
 /* UPGRADABLE */
 .upgrade-blk {
   width: 100%;
