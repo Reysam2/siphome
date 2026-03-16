@@ -1554,18 +1554,28 @@
     margin-right: 8rem;
     background: none;
     margin-top: -18rem;
+    align-items: flex-end;
   }
 
   .hero-intro__pattern-svg-mobile {
     display: none;
   }
+  .hero-intro__pattern-svg-desktop {
+    display: flex;
+  }
 
   .hero__desktop-img-blk {
+    display: flex;
     position: absolute;
     top: -0.5rem;
     right: 0;
   }
 
+  .hero__desktop-img {
+    display: block;
+  }
+
+  
   /* THREAT AWARENESS CSS */
   .main__threat-info-blk {
     margin-top: 7rem;
