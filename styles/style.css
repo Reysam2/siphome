@@ -647,14 +647,9 @@
   color: var(--primary-clr-black);
 }
 
-/* .contact__img-blk {
+.contact__img-2 {
+  display: none;
 }
-
-.contact__img {
-}
-
-.contact__form-blk {
-} */
 
 /*SMART HOME CONTACT FORM */
 
