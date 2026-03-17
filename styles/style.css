@@ -359,10 +359,10 @@
   border-bottom-left-radius: 30rem;
   background-color: var(--primary-clr-blue);
 }
- 
+
 .upgrade__pattern-desktop {
   display: none;
-} 
+}
 
 /* SMART HOME SERVICE SECTION  */
 .home__service-blk {
@@ -1575,7 +1575,6 @@
     display: block;
   }
 
-  
   /* THREAT AWARENESS CSS */
   .main__threat-info-blk {
     margin-top: 7rem;
@@ -1609,9 +1608,8 @@
     display: none;
   }
 
-   
   .threat__info-img-blk {
-    display: flex; 
+    display: flex;
     margin-top: 9rem;
   }
 
@@ -1619,16 +1617,14 @@
     display: none;
   }
 
-
   .main__threat-info-img-blk.threat-img-blk__mobile-tablet {
     display: none;
   }
 
-.main__threat-info-img-blk.threat-img-blk__desktop,
-.threat__info-img-tablet {
-  display: flex;
-}
-
+  .main__threat-info-img-blk.threat-img-blk__desktop,
+  .threat__info-img-tablet {
+    display: flex;
+  }
 
   /* THREAT FEATURE CONTAINER */
   .threat-feat__container {
@@ -2022,7 +2018,7 @@
 
   .testimonial__card {
     width: 30rem;
-    min-height: 26rem;
+    min-height: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2030,7 +2026,7 @@
     border-radius: 2.4rem;
     background-color: var(--primary-clr-white);
     position: relative;
-    padding-left: 3%;
+    padding: 3% 5% 3%;
   }
 
   .card__user-img {
@@ -2039,7 +2035,7 @@
   }
 
   .card__user-quote {
-    min-width: 85%;
+    min-width: 40rem;
     font-size: 2rem;
     text-align: left;
     line-height: 3.2rem;
