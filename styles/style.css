@@ -1470,7 +1470,7 @@
   .main__hero-section {
     width: 100%;
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
   }
 
   .hero-intro__heading--info-blk {
@@ -1914,6 +1914,10 @@
 
   .service__img {
     margin-bottom: 12.8rem;
+  }
+
+  .service__img.service__img-2 {
+    display: flex;
   }
 
   /* SERVICE CAROUSEL  */
