@@ -2146,14 +2146,14 @@
     max-width: 100%;
     min-height: 25rem;
     display: grid;
-    grid-template-columns: repeat(3, minmax(25rem, 30rem));
+    grid-template-columns: repeat(3, minmax(15rem, 35rem));
     grid-template-areas: "address nav about social";
 
     background-color: var(--primary-clr-white);
-    column-gap: 1rem;
+    /* column-gap: 1rem; */
     align-items: start;
-    justify-content: center;
-    padding: 2%;
+    /* justify-content: center!important; */
+    padding: 3%;
   }
 
   .footer__address-blk {
@@ -2165,10 +2165,6 @@
     align-items: start;
     grid-area: address;
     margin-left: 0rem;
-  }
-
-  .address__info {
-    width: 27rem !important;
   }
 
   .address__txt {
