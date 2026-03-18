@@ -1045,10 +1045,10 @@
   .threat__info-img-blk:has(.threat__info-img-tablet) {
     display: block;
   }
- 
+
   .threat__info-img-tablet {
     display: block;
-  } 
+  }
 
   /* SMART HOME FEATURES SECTION  */
   .home__features-info {
@@ -1112,6 +1112,10 @@
     margin-top: -28rem;
     padding: 30rem 0 14rem;
     border-bottom-left-radius: 30rem;
+  }
+
+  .upgrade__photo-tablet {
+    display: flex;
   }
 
   .upgrade {
@@ -2152,8 +2156,8 @@
     grid-template-areas: "address nav about social";
 
     background-color: var(--primary-clr-white);
-     align-items: start;
-     padding: 3%;
+    align-items: start;
+    padding: 3%;
   }
 
   .footer__address-blk {
