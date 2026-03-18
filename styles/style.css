@@ -1267,6 +1267,10 @@
 
   .contact__img-1 {
     display: none;
+  } 
+  
+  .contact__img.contact__img-2 {
+    display: flex;
   }
 
   /*SMART HOME CONTACT FORM */
