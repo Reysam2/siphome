@@ -1172,6 +1172,10 @@
     display: none;
   }
 
+  .service__img.service__img-2 {
+    display: flex;
+  }
+
   /* SERVICE CAROUSEL  */
 
   .carousel-blk {
