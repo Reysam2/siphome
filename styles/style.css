@@ -2104,6 +2104,10 @@
     display: none;
   }
 
+  .contact__img.contact__img-2 {
+    display: flex;
+  }
+
   /*SMART HOME CONTACT FORM */
 
   .contact__form-blk {
