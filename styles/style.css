@@ -665,7 +665,7 @@
 }
 
 .form {
-  min-width: 100%;
+  min-width: 90%;
   min-height: 25rem;
   display: flex;
   flex-direction: column;
@@ -674,11 +674,17 @@
   margin-bottom: 2rem;
 }
 
+@media (min-width: 400px) {
+  .form {
+    min-width: 80%;
+  }
+}
+
 .form__group {
-  width: 100%;
   min-height: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   column-gap: 1.6rem;
   margin-bottom: 2rem;
@@ -688,6 +694,7 @@
   line-height: 2.4;
   font-size: 1.5rem;
   color: var(--primary-clr-black);
+  align-self: self-start;
 }
 
 .form__group input {
@@ -709,9 +716,14 @@
 }
 
 .form__group-blk {
-  width: 100%;
+  width: 900%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+}
+
+.form__group-blk:has(button) {
+  align-self: self-start;
+  width: 40% !important;
 }
 
 .form__submit-btn {
@@ -725,6 +737,7 @@
   border: none;
   border-radius: 0.4rem;
   box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
+  align-self: self-start;
 }
 
 /* FOOTER */
@@ -968,7 +981,7 @@
 
 /*TABLET */
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   /* HEADER */
   .header__logo--menu {
     justify-content: space-between;
@@ -1267,8 +1280,8 @@
 
   .contact__img-1 {
     display: none;
-  } 
-  
+  }
+
   .contact__img.contact__img-2 {
     display: flex;
   }
@@ -1276,13 +1289,36 @@
   /*SMART HOME CONTACT FORM */
 
   .contact__form-blk {
-    margin: 3.2rem 0 12rem;
+    margin: 3.2rem 0 8rem;
   }
 
   .form {
     min-width: 50%;
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: start;
+    margin-bottom: 2rem;
+  }
+  .form__group {
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    column-gap: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .form__group-blk {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+  }
+
+  .form__group-blk:has(button) {
+    min-width: clamp(90%, 2.5vw + 10%, 100%);
   }
 
   /* FOOTER */
