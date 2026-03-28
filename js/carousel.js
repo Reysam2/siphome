@@ -82,7 +82,7 @@ function testimonialCarousel() {
     tesCardCarousel.scrollLeft = 0;
   }
 
-  setTimeout(testimonialCarousel, 2000);
+  setTimeout(testimonialCarousel, 7500);
 
 }
 
