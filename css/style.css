@@ -50,7 +50,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 5rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -860,7 +860,7 @@
 .address__txt {
   text-align: center;
   line-height: 3rem;
-  color: var(--primary-clr-black);
+  color: var(--primary-clr-grey);
   font-size: 2rem;
   margin-bottom: 3rem;
 }
@@ -868,6 +868,7 @@
 .address__tel,
 .address__email {
   font-weight: bold;
+  color: var(--primary-clr-grey);
 }
 
 .address__tel {
@@ -933,7 +934,7 @@
 
 .nav__link {
   text-decoration: none;
-  color: var(--primary-clr-black);
+  color: var(--primary-clr-grey);
   cursor: pointer;
   transition: color 0.125s ease-in-out;
 }
@@ -1426,7 +1427,7 @@
     align-items: start;
     grid-area: address;
     margin-left: -3rem;
-    padding:3%
+    padding: 3%;
   }
 
   .address__info {
@@ -1515,7 +1516,7 @@
   }
 
   /* FOOTER COPYRIGHT */
-  .footer__copyright-blk { 
+  .footer__copyright-blk {
     margin-top: 7.7rem;
     grid-column: 1/5;
     grid-area: copyright;
@@ -1545,7 +1546,7 @@
   .menu__button {
     display: none;
   }
- 
+
   .header__nav-blk {
     min-width: 70%;
     min-height: 10rem;
