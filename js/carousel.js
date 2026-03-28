@@ -1,41 +1,99 @@
 'use strict'
 
-const carousel = document.querySelector('#carousel');
-let scrollSpeed = 1;
-let isPaused = false;
+const tesCardCarousel = document.querySelector('#testimonial__card-carousel')
+const serviceCarousel = document.querySelector('#carousel');
+let serviceScrollSpeed = 1;
+let isServicePaused = false;
+let isTesCardPaused = false;
 
-if (document.body.clientWidth < 1024) {
-  carousel.innerHTML += carousel.innerHTML;
-
-}
-
-carousel.addEventListener('mouseenter', () => {
-  isPaused = true;
-})
-
-carousel.addEventListener('mouseleave', () => {
-  isPaused = false;
-})
-
-
-function scrollCarousel() {
-  if (!carousel || isPaused) {
-     requestAnimationFrame(scrollCarousel);
-     return
-  };
-
-  carousel.scrollLeft += scrollSpeed;
-  if (carousel.scrollLeft >= carousel.scrollWidth / 2) {
-    carousel.style.scrollBehavior = 'auto';
-    carousel.scrollLeft = 0;
+if (window.innerWidth < 1024) {
+  if (serviceCarousel) {
+    serviceCarousel.innerHTML += serviceCarousel.innerHTML;
   }
 
-  requestAnimationFrame(scrollCarousel);
+}
+
+if (serviceCarousel) {
+  serviceCarousel.addEventListener('mouseenter', () => {
+    isServicePaused = true;
+  })
+
+  serviceCarousel.addEventListener('mouseleave', () => {
+    isServicePaused = false;
+  })
+}
+
+
+
+if (tesCardCarousel) {
+  tesCardCarousel.addEventListener('mouseenter', () => {
+    isTesCardPaused = true;
+  })
+
+  tesCardCarousel.addEventListener('mouseleave', () => {
+    isTesCardPaused = false;
+  })
+}
+
+
+
+
+function scrollServiceCarousel() {
+  if (!serviceCarousel || isServicePaused) {
+    requestAnimationFrame(scrollServiceCarousel);
+    return
+  };
+
+  serviceCarousel.scrollLeft += serviceScrollSpeed;
+  if (serviceCarousel.scrollLeft >= serviceCarousel.scrollWidth / 2) {
+    serviceCarousel.style.scrollBehavior = 'auto';
+    serviceCarousel.scrollLeft = 0;
+  }
+
+  requestAnimationFrame(scrollServiceCarousel);
+
+}
+
+
+function testimonialCarousel() {
+
+
+  if (!tesCardCarousel || isTesCardPaused) {
+    setTimeout(testimonialCarousel, 2000);
+    return
+  };
+
+  const card = tesCardCarousel.querySelector('.testimonial__card');
+  if (!card) return;
+
+ 
+  const cardWidth = card.offsetWidth;  
+  const columnGap = parseInt(getComputedStyle(tesCardCarousel).columnGap) || 2; 
+
+  tesCardCarousel.scrollBy({
+    left: cardWidth + columnGap,
+    behavior: 'smooth'
+  });
+
+
+
+  if (tesCardCarousel.scrollLeft >= tesCardCarousel.scrollWidth / 2) {
+    tesCardCarousel.style.scrollBehavior = 'auto';
+    tesCardCarousel.scrollLeft = 0;
+  }
+
+  setTimeout(testimonialCarousel, 2000);
 
 }
 
 
 
-scrollCarousel()
+if (serviceCarousel) {
+  scrollServiceCarousel()
+
+}
 
 
+if (tesCardCarousel) {
+  testimonialCarousel();
+}
