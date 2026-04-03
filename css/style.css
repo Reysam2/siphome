@@ -519,7 +519,7 @@
   padding: 5%;
   column-gap: 1.6rem;
   background-color: var(--primary-clr-white);
-scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 .carousel__item {
@@ -1544,7 +1544,16 @@ scrollbar-width: none;
     justify-content: space-around;
     align-items: flex-end;
     padding: 0;
+    position: sticky;
+    top: -7rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  
+    transition: all 0.2s ease
   }
+
+ 
 
   .menu__button {
     display: none;
@@ -1553,7 +1562,7 @@ scrollbar-width: none;
   .header__nav-blk {
     min-width: 70%;
     min-height: 10rem;
-    background-color: var(--primary-clr-blue);
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -1568,16 +1577,38 @@ scrollbar-width: none;
     gap: clamp(2rem, 2.5vw, 4rem);
   }
 
+  .header__nav-list-item {
+    position: relative;
+  }
+
   .header__nav-link {
     width: 100%;
     color: var(--primary-clr-white);
     text-decoration: none;
     font-size: 1.8rem;
+    position: relative;
+      transition: all 0.25s ease-out;
   }
 
-  .header__nav-link[href="#home"] {
-    color: var(--primary-clr-white);
-    font-weight: bold;
+  .header__nav-list-item::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-clr-green);
+    display: block;
+    transition: all 0.25s ease-out;
+  }
+
+  .header__nav-list-item:hover::before {
+    width: 100%; 
+  }
+
+  .header__nav-link-active {
+    color: var(--primary-clr-green);
+    font-weight: bold
   }
 
   .header__auth-link-blk {
@@ -1586,14 +1617,25 @@ scrollbar-width: none;
     flex-direction: row;
     align-self: flex-end;
     justify-self: flex-end;
+    justify-content: space-between;
     margin-left: clamp(7rem, 10rem, 12rem);
     gap: clamp(2rem, 2.5vw, 4rem);
+    background-color: var(--primary-clr-white);
+    border-radius: 0.5rem;
+    transition: all 0.125s ease-out;
   }
 
   .header__nav-link[href="#signin"] {
     color: var(--primary-clr-black);
     font-weight: bold;
   }
+
+    .header__nav-link[href="#signin"]:active,
+    .header__nav-link[href="#getstarted"]:active {
+      background: var(--primary-clr-green);
+      color: var(--primary-clr-red)
+    }
+
   .header__nav-link[href="#getstarted"] {
     color: var(--primary-clr-green);
     font-weight: bold;
