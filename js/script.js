@@ -16,3 +16,14 @@ function selectNavLink() {
 }
 
 selectNavLink()
+
+
+// Design Pattern effect
+let patternDots = document.querySelectorAll('.hero-intro__pattern svg g circle, .upgrade__pattern svg g circle');
+
+
+patternDots.forEach((dot, i) => {
+  dot.style.animationDelay = `${i * 0.3}s`;
+  dot.classList.add('show');
+});
+
