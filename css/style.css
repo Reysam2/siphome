@@ -12,6 +12,49 @@
   --outline: 0.2rem solid red;
 }
 
+/* UTILITY CLASSES */
+.auto-show {
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+  animation: reveal both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+.delay-5 {
+  animation-delay: 1s;
+}
+
+.delay-6 {
+  animation-delay: 1.2s;
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(30rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* MOBILE → DEFAULT */
 
 /* HEADER */
@@ -1535,6 +1578,58 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+  .show {
+    animation: dot-reveal 1s ease-out alternate infinite;
+  }
+
+  .split-left {
+    animation: splitview-left both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+
+  .split-right {
+    animation: splitview-right both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+
+  @keyframes dot-reveal {
+    from {
+      opacity: 0;
+      transform: translateX(-2rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes splitview-left {
+    from {
+      opacity: 0;
+      transform: translateX(-30rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes splitview-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   /* HEADER */
   .header__logo--menu {
     width: 100%;
@@ -1549,11 +1644,9 @@
     left: 0;
     right: 0;
     z-index: 100;
-  
-    transition: all 0.2s ease
-  }
 
- 
+    transition: all 0.2s ease;
+  }
 
   .menu__button {
     display: none;
@@ -1587,7 +1680,7 @@
     text-decoration: none;
     font-size: 1.8rem;
     position: relative;
-      transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
   }
 
   .header__nav-list-item::before {
@@ -1603,12 +1696,12 @@
   }
 
   .header__nav-list-item:hover::before {
-    width: 100%; 
+    width: 100%;
   }
 
   .header__nav-link-active {
     color: var(--primary-clr-green);
-    font-weight: bold
+    font-weight: bold;
   }
 
   .header__auth-link-blk {
@@ -1630,11 +1723,11 @@
     font-weight: bold;
   }
 
-    .header__nav-link[href="#signin"]:active,
-    .header__nav-link[href="#getstarted"]:active {
-      background: var(--primary-clr-green);
-      color: var(--primary-clr-red)
-    }
+  .header__nav-link[href="#signin"]:active,
+  .header__nav-link[href="#getstarted"]:active {
+    background: var(--primary-clr-green);
+    color: var(--primary-clr-red);
+  }
 
   .header__nav-link[href="#getstarted"] {
     color: var(--primary-clr-green);
@@ -2020,6 +2113,9 @@
 
   .upgrade__pattern-mobile {
     display: none;
+  }
+  .upgrade__pattern-desktop {
+    display: block;
   }
   .upgrade__pattern-blk {
     min-height: 0rem;
