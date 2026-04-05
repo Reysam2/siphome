@@ -1249,7 +1249,8 @@
     column-gap: 4.8rem;
     margin-top: -28rem;
     padding: 30rem 0 14rem;
-    border-bottom-left-radius: 30rem;
+    border-bottom-left-radius: 30rem; 
+    z-index: 1; 
   }
 
   .upgrade__photo-tablet {
@@ -1276,16 +1277,21 @@
   .upgrade__pattern-blk {
     margin-top: -15rem;
     height: 15rem;
-    width: 80%;
+    width: 60%;
     display: flex;
     border-bottom-left-radius: 30rem;
-    z-index: 5;
-    align-self: flex-end;
-    margin-right: 1rem;
+    z-index: 1;
+    align-self: flex-end!important; 
   }
 
   .upgrade__pattern-desktop {
     display: none;
+  }
+
+ 
+  .upgrade__pattern-mobile {
+   margin-right: 1rem;
+
   }
 
   /* SMART HOME SERVICE SECTION  */
