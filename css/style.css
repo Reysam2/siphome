@@ -98,6 +98,26 @@ body {
   }
 }
 
+.form__group {
+  position: relative;
+}
+
+.validation__status {
+  position: absolute;
+  color: var(--primary-clr-red);
+  width: 100%;
+  display: flex;
+  font-size: 1.4rem;
+  right: 0;
+  bottom: -0.8rem;
+  ;
+}
+
+
+.validation__status.invalid {
+  color: var(--primary-clr-red)
+}
+
 /* MOBILE → DEFAULT */
 
 /* HEADER */
