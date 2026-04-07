@@ -23,7 +23,10 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+ 
+input, select, textarea  {
+  font-size: 1.6rem;
+}
 
 :root {
   --primary-clr-blue: #1c57c9;
@@ -111,11 +114,6 @@ body {
   right: 0;
   bottom: -0.8rem;
   ;
-}
-
-
-.validation__status.invalid {
-  color: var(--primary-clr-red)
 }
 
 /* MOBILE → DEFAULT */
