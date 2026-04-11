@@ -23,8 +23,10 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
- 
-input, select, textarea  {
+
+input,
+select,
+textarea {
   font-size: 1.6rem;
 }
 
@@ -46,7 +48,7 @@ input, select, textarea  {
 .auto-show {
   animation: reveal both;
   animation-timeline: view();
-  animation-range: entry 20% cover 40%;
+  animation-range: entry 5% cover 40%;
 }
 
 .show {
@@ -277,7 +279,7 @@ input, select, textarea  {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 6rem;
+  column-gap: 8rem;
 }
 
 .intro__btn-1,
@@ -291,6 +293,8 @@ input, select, textarea  {
   border-radius: 0.4rem;
   font-weight: bold;
   font-size: 1.5rem;
+  transition: all 0.125s ease-in;
+
 }
 
 .intro__btn-1 {
@@ -301,6 +305,27 @@ input, select, textarea  {
 
 .intro__btn-2 {
   margin-right: 1.5rem;
+}
+
+
+.intro__btn-1:hover {
+  margin-right: -4rem !important;
+}
+
+.intro__btn-2:hover {
+  margin-right: -2.5rem !important;
+}
+
+.intro__btn-1:hover,
+.intro__btn-2:hover {
+  width: 12rem;
+  font-size: 1.3rem;
+}
+
+.intro__btn-1:active,
+.intro__btn-2:active {
+  transform: translate(0.3rem, 0.3rem) !important;
+  scale: 0.95 !important;
 }
 
 .hero-intro__pattern-blk {

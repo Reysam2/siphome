@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
       content="SipHome – Your trusted home service platform. Explore services, testimonials, and more."
     />
+
     <title>SipHome</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,10 +23,15 @@
         href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
         rel="stylesheet"
     /></noscript>
-    <link rel="preload" as="image" href="/index.html" />
-
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="css/style.css" />
+    </noscript>
     <script defer src="js/mobile-menu.js"></script>
     <script defer src="js/carousel.js"></script>
     <script defer src="js/script.js"></script>
@@ -137,15 +144,15 @@
               </p>
             </div>
 
-            <div class="hero-intro__button-blk">
+            <div class="hero-intro__button-blk auto-show delay-3">
               <div class="hero-intro__btn-1">
-                <button class="intro__btn-1 auto-show delay-3">
+                <button class="intro__btn-1">
                   Get Started
                 </button>
               </div>
 
               <div class="hero-intro__btn-2">
-                <button class="intro__btn-2 auto-show delay-4">
+                <button class="intro__btn-2">
                   Learn More
                 </button>
               </div>
