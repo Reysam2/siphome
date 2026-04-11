@@ -971,6 +971,19 @@ textarea {
   background-color: var(--primary-clr-white);
 }
 
+.footer p:not(.footer p:first-child):hover,
+.footer a:hover {
+  color: var(--primary-clr-blue);
+  text-decoration: underline;
+  transition: all 0.125s ease-in;
+}
+
+.footer p:not(.footer p:first-child):active,
+.footer a:active {
+  color: var(--primary-clr-green);
+  transition: all 0.125s ease-in;
+}
+
 .footer__address-blk {
   min-width: 100%;
   min-height: 25rem;
@@ -996,6 +1009,11 @@ textarea {
   text-align: center;
   font-size: 2rem;
   color: var(--primary-clr-black);
+}
+
+.address__heading:hover {
+  text-decoration: none !important;
+  color: var(--primary-clr-black) !important
 }
 
 .address__txt {
@@ -1182,6 +1200,15 @@ textarea {
   align-items: center;
   background-color: var(--primary-clr-white);
   margin-top: 3rem;
+}
+
+.footer__copyright-blk p {
+  text-decoration: none !important;
+}
+
+.footer__copyright-blk p:hover,
+.footer__copyright-blk p:active {
+  color: var(--primary-clr-black) !important;
 }
 
 .copyright__info {
