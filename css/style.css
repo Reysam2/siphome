@@ -319,7 +319,6 @@ textarea {
 .intro__btn-1:hover,
 .intro__btn-2:hover {
   width: 12rem;
-  font-size: 1.3rem;
 }
 
 .intro__btn-1:active,
@@ -948,6 +947,16 @@ textarea {
   border-radius: 0.4rem;
   box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
   align-self: self-start;
+  transition: all 0.125s ease-in;
+}
+
+.form__submit-btn:hover {
+  background-color: var(--primary-clr-blue);
+}
+
+.form__submit-btn:active {
+  transform: translate(0.3rem, 0.3rem) !important;
+  scale: 0.95 !important;
 }
 
 /* FOOTER */
