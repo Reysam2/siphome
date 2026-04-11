@@ -307,24 +307,10 @@ textarea {
   margin-right: 1.5rem;
 }
 
-
-.intro__btn-1:hover {
-  margin-right: -4rem !important;
-}
-
-.intro__btn-2:hover {
-  margin-right: -2.5rem !important;
-}
-
-.intro__btn-1:hover,
-.intro__btn-2:hover {
-  width: 12rem;
-}
-
 .intro__btn-1:active,
 .intro__btn-2:active {
   transform: translate(0.3rem, 0.3rem) !important;
-  scale: 0.95 !important;
+  transition: all 0.125s linear;
 }
 
 .hero-intro__pattern-blk {
@@ -1928,6 +1914,12 @@ textarea {
     max-width: 49%;
   }
 
+  .intro__btn-1,
+  .intro__btn-2 {
+    transition: all 0.125s ease-in;
+  }
+
+
   .intro__btn-1 {
     background-color: var(--primary-clr-green);
     border: none;
@@ -1937,6 +1929,26 @@ textarea {
   .intro__btn-2 {
     margin-right: 1.5rem;
   }
+
+  .intro__btn-1:hover {
+    margin-right: -4rem !important;
+  }
+
+  .intro__btn-2:hover {
+    margin-right: -2.5rem !important;
+  }
+
+  .intro__btn-1:hover,
+  .intro__btn-2:hover {
+    width: 12rem;
+  }
+
+  .intro__btn-1:active,
+  .intro__btn-2:active {
+    transform: translate(0.3rem, 0.3rem) !important;
+    scale: 0.95 !important;
+  }
+
 
   .hero-intro__pattern-blk {
     min-height: 18rem;
