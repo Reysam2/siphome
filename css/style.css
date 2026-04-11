@@ -1800,7 +1800,8 @@ textarea {
     text-decoration: none;
     font-size: 1.8rem;
     position: relative;
-    transition: all 0.25s ease-out;
+    transition: all 0.1s ease;
+
   }
 
   .header__nav-list-item::before {
@@ -1812,11 +1813,12 @@ textarea {
     height: 0.2rem;
     background: var(--primary-clr-green);
     display: block;
-    transition: all 0.25s ease-out;
+    transition: all 2.25s ease-out;
   }
 
   .header__nav-list-item:hover::before {
     width: 100%;
+    transition: all 0.25s ease-in;
   }
 
   .header__nav-link-active {
