@@ -653,7 +653,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .indicator-blk {
@@ -673,7 +672,7 @@ textarea {
   opacity: 20%;
 }
 
-.indicator:nth-child(2) {
+.indicator-active {
   background: var(--primary-clr-blue);
   opacity: 100%;
 }
@@ -2364,7 +2363,7 @@ textarea {
 
   .carousel__indicator-blk,
   .indicator-blk {
-    display: none;
+    display: none !important;
   }
 
   /* SMART HOME TESTIMONIAL SECTION */
