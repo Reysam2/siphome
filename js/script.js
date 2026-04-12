@@ -27,7 +27,7 @@ patternDots.forEach((dot, i) => {
   dot.classList.add('show');
 });
 
-
+///////////////////////////////////////////////////////
 // Form Validation
 
 /* This part of the code is handling form validation. Here's a breakdown of what it does: */
