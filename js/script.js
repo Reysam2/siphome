@@ -11,6 +11,10 @@ function selectNavLink() {
         navLink.classList.remove('header__nav-link-active')
       })
       link.classList.add('header__nav-link-active')
+
+      setTimeout(() => {
+        link.classList.remove('header__nav-link-active')
+      }, 2000)
     })
   })
 }
