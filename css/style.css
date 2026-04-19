@@ -1930,22 +1930,22 @@ textarea {
   }
 
   .intro__btn-1:hover {
-    margin-right: -4rem !important;
+    margin-right: -4.5rem !important;
   }
 
   .intro__btn-2:hover {
-    margin-right: -2.5rem !important;
+    margin-right: -3rem !important;
   }
 
   .intro__btn-1:hover,
   .intro__btn-2:hover {
-    width: 12rem;
+    width: 12.5rem;
   }
 
   .intro__btn-1:active,
   .intro__btn-2:active {
     transform: translate(0.3rem, 0.3rem) !important;
-    scale: 0.95 !important;
+    scale: 0.97 !important;
   }
 
 
