@@ -1831,12 +1831,12 @@ textarea {
   }
 
   .header__nav-link[href="#signin"]:active,
-  .header__nav-link[href="#getstarted"]:active {
+  .header__nav-link[href="/pages/signup.html"]:active {
     background: var(--primary-clr-green);
     color: var(--primary-clr-red);
   }
 
-  .header__nav-link[href="#getstarted"] {
+  .header__nav-link[href="/pages/signup.html"] {
     color: var(--primary-clr-green);
     font-weight: bold;
   }

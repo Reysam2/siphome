@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+        rel="stylesheet"
+    /></noscript>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="user__auth">
+      <section></section>
+
+      <section class="auth__container-blk">
+        <h1 class="auth__heading">Create your account</h1>
+        <section class="auth__container">
+          <form id="form_auth" action="#">
+            <div class="full-name">
+              <div class="field first-name">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  id="firsttName"
+                  name="userName"
+                  placeholder="John"
+                  autocomplete="on"
+                />
+              </div>
+
+              <div class="field last-name">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="userName"
+                  placeholder="Doe"
+                  autocomplete="on"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="password-field">
+              <div class="field">
+                <label for="userPassword">Password</label>
+                <input
+                  type="password"
+                  name="userPassword"
+                  id="userPassword"
+                  placeholder="Create a password"
+                  autocomplete="new-password"
+                />
+              </div>
+
+              <div class="field">
+                <label for="userPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  name="Confirm Password"
+                  id="confirmPassword"
+                  placeholder="Confirm Password"
+                  autocomplete="current-password"
+                />
+              </div>
+            </div>
+
+            <div class="field create-btn-blk">
+              <button type="submit" class="create-btn">Create Account</button>
+            </div>
+          </form>
+
+          <p class="auth__login-txt">
+            Already have an account?
+            <a class="auth__login-link" href="/login.html">Login</a>
+          </p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
