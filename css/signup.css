@@ -1,173 +1,177 @@
-:root {
-  --accent-clr-grey: #C4C4C4;
-}
+  :root {
+    --accent-clr-grey: #C4C4C4;
+  }
 
-.user__auth {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 40rem;
-  place-items: center;
-  justify-content: space-between;
-  background-color: var(--secondary-clr-white);
-  position: relative;
-}
+  /* DESKTOP */
+  @media (min-width: 1024px) {
 
 
-.auth__video-blk {
-  height: 100vh;
-  display: flex;
-  overflow: hidden;
-}
-
-.auth__video {
-  width: 100%;
-  height: 100%;
-}
-
-.auth__video video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.video__credit {
-  color: var(--primary-clr-white);
-  position: absolute;
-  bottom: 3rem;
-  right: 2rem;
-}
-
-.video__credit a {
-  color: var(--secondary-clr-white);
-  text-decoration: none;
-  font-size: 1.4rem;
-}
-
-.video__credit a:hover {
-  opacity: 0.9;
-}
+    .user__auth {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 40rem;
+      place-items: center;
+      justify-content: space-between;
+      background-color: var(--secondary-clr-white);
+      position: relative;
+    }
 
 
-.siphome__logo-blk {
-  position: absolute;
-  top: 3rem;
-  left: 4rem;
-  transition: all 0.125s ease-in;
-}
+    .auth__video-blk {
+      height: 100vh;
+      display: flex;
+      overflow: hidden;
+    }
 
-.siphome__logo-blk svg:hover>path:nth-child(1) {
-  fill: var(--primary-clr-blue);
-  opacity: 0.8;
-}
+    .auth__video {
+      width: 100%;
+      height: 100%;
+    }
 
-.siphome__logo-blk svg:active>path:nth-child(1) {
-  fill: var(--primary-clr-green);
-  opacity: 0.6;
-}
+    .auth__video video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
 
-.auth__container-blk {
-  margin-top: 10rem;
-}
+    .video__credit {
+      color: var(--primary-clr-white);
+      position: absolute;
+      bottom: 3rem;
+      right: 2rem;
+    }
 
-.auth__heading {
-  font-size: 2.4rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
+    .video__credit a {
+      color: var(--secondary-clr-white);
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
 
-.field {
-  max-width: 35rem;
-  height: 8rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2%;
-
-}
-
-.full-name {
-  display: grid;
-  grid-template-columns: repeat(2, 15rem);
-  max-width: 35rem;
-  column-gap: 2rem;
-}
-
-.field label {
-  line-height: 2;
-  font-size: 1.5rem;
-  color: var(--primary-clr-black);
-  align-self: self-start;
-  font-weight: 600;
-  ;
-}
-
-.field input {
-  border: 0.1rem solid var(--accent-clr-grey);
-  min-height: 3.7rem;
-  font-size: 1.6rem;
-  max-width: 31.5rem;
-  padding: 1.5%;
-  margin-bottom: 1.6rem;
-  border-radius: 0.7rem;
-  padding-left: 1.5rem;
-}
-
-.field input::placeholder {
-  font-size: 1.3rem;
-
-}
-
-.auth__login-txt {
-  font-size: 1.5rem;
-}
-
-.create-btn-blk {
-  max-width: 35rem;
-  height: 8rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  padding: 2%;
-}
-
-.create-btn {
-  min-height: 3.5rem;
-  width: 100%;
-  color: var(--primary-clr-white);
-  background-color: var(--primary-clr-green);
-  font-weight: bold;
-  color: var(--primary-clr-white);
-  font-size: 1.3rem;
-  border: none;
-  border-radius: 0.4rem;
-  box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
-  transition: all 0.125s ease-in;
-}
+    .video__credit a:hover {
+      opacity: 0.9;
+    }
 
 
-.create-btn:hover {
-  background-color: var(--primary-clr-blue);
-}
+    .siphome__logo-blk {
+      position: absolute;
+      top: 3rem;
+      left: 4rem;
+      transition: all 0.125s ease-in;
+    }
 
-.create-btn:active {
-  transform: translate(0.3rem, 0.3rem) !important;
-  scale: 0.95 !important;
-}
+    .siphome__logo-blk svg:hover>path:nth-child(1) {
+      fill: var(--primary-clr-blue);
+      opacity: 0.8;
+    }
 
-.auth__signin-txt {
-  text-align: center;
-}
+    .siphome__logo-blk svg:active>path:nth-child(1) {
+      fill: var(--primary-clr-green);
+      opacity: 0.6;
+    }
 
-.auth__signin-link {
-  text-decoration: none;
-  color: var(--primary-clr-blue);
-  transition: all 0.125s ease-out;
-} 
+    .auth__container-blk {
+      margin-top: 10rem;
+    }
 
-.auth__signin-link:hover {
-  color: var(--primary-clr-green);
-  text-decoration: underline;
-}
+    .auth__heading {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .field {
+      max-width: 35rem;
+      height: 8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2%;
+    }
+
+    .full-name {
+      display: grid;
+      grid-template-columns: repeat(2, 15rem);
+      max-width: 35rem;
+      column-gap: 2rem;
+    }
+
+    .field label {
+      line-height: 2;
+      font-size: 1.5rem;
+      color: var(--primary-clr-black);
+      align-self: self-start;
+      font-weight: 600;
+      ;
+    }
+
+    .field input {
+      border: 0.1rem solid var(--accent-clr-grey);
+      min-height: 3.7rem;
+      font-size: 1.6rem;
+      max-width: 31.5rem;
+      padding: 1.5%;
+      margin-bottom: 1.6rem;
+      border-radius: 0.7rem;
+      padding-left: 1.5rem;
+    }
+
+    .field input::placeholder {
+      font-size: 1.3rem;
+
+    }
+
+    .auth__login-txt {
+      font-size: 1.5rem;
+    }
+
+    .create-btn-blk {
+      max-width: 35rem;
+      height: 8rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 2%;
+    }
+
+    .create-btn {
+      min-height: 3.5rem;
+      width: 100%;
+      color: var(--primary-clr-white);
+      background-color: var(--primary-clr-green);
+      font-weight: bold;
+      color: var(--primary-clr-white);
+      font-size: 1.3rem;
+      border: none;
+      border-radius: 0.4rem;
+      box-shadow: 0.01rem 0.01rem 5rem var(--box-shadow-grey);
+      transition: all 0.125s ease-in;
+    }
+
+
+    .create-btn:hover {
+      background-color: var(--primary-clr-blue);
+    }
+
+    .create-btn:active {
+      transform: translate(0.3rem, 0.3rem) !important;
+      scale: 0.95 !important;
+    }
+
+    .auth__signin-txt {
+      text-align: center;
+    }
+
+    .auth__signin-link {
+      text-decoration: none;
+      color: var(--primary-clr-blue);
+      transition: all 0.125s ease-out;
+    }
+
+    .auth__signin-link:hover {
+      color: var(--primary-clr-green);
+      text-decoration: underline;
+    }
+  }
