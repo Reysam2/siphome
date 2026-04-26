@@ -31,6 +31,24 @@
   object-fit: cover;
 }
 
+.video__credit {
+  color: var(--primary-clr-white);
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.video__credit a {
+  color: var(--secondary-clr-white);
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.video__credit a:hover {
+  opacity: 0.9;
+}
+
+
 .siphome__logo-blk {
   position: absolute;
   top: 3rem;
@@ -139,11 +157,17 @@
   scale: 0.95 !important;
 }
 
-.auth__login-txt {
+.auth__signin-txt {
   text-align: center;
 }
 
-.auth__login-link {
+.auth__signin-link {
   text-decoration: none;
   color: var(--primary-clr-blue);
+  transition: all 0.125s ease-out;
+} 
+
+.auth__signin-link:hover {
+  color: var(--primary-clr-green);
+  text-decoration: underline;
 }
