@@ -1825,12 +1825,12 @@ textarea {
     transition: all 0.125s ease-out;
   }
 
-  .header__nav-link[href="#signin"] {
+  .header__nav-link[href="/pages/signin.html"] {
     color: var(--primary-clr-black);
     font-weight: bold;
   }
 
-  .header__nav-link[href="#signin"]:active,
+  .header__nav-link[href="/pages/signin.html"]:active,
   .header__nav-link[href="/pages/signup.html"]:active {
     background: var(--primary-clr-green);
     color: var(--primary-clr-red);
