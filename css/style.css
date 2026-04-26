@@ -1830,9 +1830,19 @@ textarea {
     font-weight: bold;
   }
 
-  .header__nav-link[href="/pages/signin.html"]:active,
+    .header__nav-link[href="/pages/signin.html"]:hover  {
+    color: var(--primary-clr-blue);
+  }
+
+  .header__nav-link[href="/pages/signup.html"]:hover {
+    color: var(--primary-clr-blue);
+  }
+
+  .header__nav-link[href="/pages/signin.html"]:active  {
+    color: var(--primary-clr-red);
+  }
+
   .header__nav-link[href="/pages/signup.html"]:active {
-    background: var(--primary-clr-green);
     color: var(--primary-clr-red);
   }
 
