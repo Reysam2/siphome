@@ -40,6 +40,16 @@
 
 }
 
+.siphome__logo-blk svg:hover>path:nth-child(1) {
+  fill: var(--primary-clr-blue);
+  opacity: 0.8;
+}
+
+.siphome__logo-blk svg:active>path:nth-child(1) {
+  fill: var(--primary-clr-green);
+  opacity: 0.6;
+}
+
 .auth__heading {
   font-size: 2rem;
   font-weight: bold;
@@ -157,4 +167,10 @@
 .auth__signup-link {
   text-decoration: none;
   color: var(--primary-clr-blue);
+  transition: all 0.125s ease-in;
+}
+
+.auth__signup-link:hover {
+    color: var(--primary-clr-green);
+text-decoration: underline;
 }
