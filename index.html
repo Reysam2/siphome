@@ -6,32 +6,20 @@
     <meta name="robots" content="index, follow" />
     <meta
       name="description"
-      content="SipHome – Your trusted home service platform. Explore services, testimonials, and more."
+      content="SipHome – Your trusted home service platform. Explore services, testimonials and more."
     />
 
     <title>SipHome</title>
+    <meta name="theme-color" content="#f2f2f2" />
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
-    <noscript
-      ><link
-        href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-        rel="stylesheet"
-    /></noscript>
-    <link
-      rel="preload"
-      href="css/style.css"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
-    <noscript>
-      <link rel="stylesheet" href="css/style.css" />
-    </noscript>
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/mobile-menu.js"></script>
     <script defer src="js/carousel.js"></script>
     <script defer src="js/script.js"></script>
@@ -90,10 +78,10 @@
 
             <div class="header__auth-link-blk">
               <li class="header__nav-list-item">
-                <a class="header__nav-link" href="/pages/signin.html">Sign In</a>
+                <a class="header__nav-link" href="./pages/signin.html">Sign In</a>
               </li>
               <li class="header__nav-list-item">
-                <a id="signup" class="header__nav-link signup" href="/pages/signup.html">Get Started</a>
+                <a id="signup" class="header__nav-link signup" href="./pages/signup.html">Get Started</a>
               </li>
             </div>
           </ul>
@@ -111,11 +99,15 @@
 
         <div class="hero-intro__button-blk mobile__cta-blk">
           <div class="hero-intro__btn-1 cta__btn-1-blk">
-            <button class="intro__btn-1 cta__btn-1">Get Started</button>
+           <a href="./pages/signup.html">
+             <button class="intro__btn-1 cta__btn-1">Get Started</button>
+           </a>
           </div>
 
           <div class="hero-intro__btn-2 cta__btn-2-blk">
-            <button class="intro__btn-2 cta__btn-2">Sign In</button>
+           <a href="./pages/signin.html">
+             <button class="intro__btn-2 cta__btn-2">Sign In</button>
+           </a>
           </div>
         </div>
       </div>
@@ -146,7 +138,9 @@
 
             <div class="hero-intro__button-blk auto-show delay-3">
               <div class="hero-intro__btn-1">
-                <button class="intro__btn-1">Get Started</button>
+               <a href="./pages/signup.html">
+                 <button class="intro__btn-1">Get Started</button>
+               </a>:
               </div>
 
               <div class="hero-intro__btn-2">
