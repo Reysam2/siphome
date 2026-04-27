@@ -1749,7 +1749,6 @@ textarea {
     left: 0;
     right: 0;
     z-index: 100;
-
     transition: all 0.2s ease;
   }
 
@@ -1773,6 +1772,7 @@ textarea {
     justify-content: flex-end;
     margin-bottom: -1rem;
     gap: clamp(2rem, 2.5vw, 4rem);
+    margin-top: 0.6rem;
   }
 
   .header__nav-list-item {
@@ -1813,40 +1813,40 @@ textarea {
 
   .header__auth-link-blk {
     display: flex;
-    min-width: 20rem;
+    min-width: 22rem;
     flex-direction: row;
     align-self: flex-end;
     justify-self: flex-end;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-left: clamp(7rem, 10rem, 12rem);
-    gap: clamp(2rem, 2.5vw, 4rem);
+    gap: clamp(1.5rem, 2.5vw, 3rem);
     background-color: var(--primary-clr-white);
     border-radius: 0.5rem;
     transition: all 0.125s ease-out;
   }
 
-  .header__nav-link[href="/pages/signin.html"] {
+  .header__nav-link[href="./pages/signin.html"] {
     color: var(--primary-clr-black);
     font-weight: bold;
   }
 
-    .header__nav-link[href="/pages/signin.html"]:hover  {
+    .header__nav-link[href="./pages/signin.html"]:hover  {
     color: var(--primary-clr-blue);
   }
 
-  .header__nav-link[href="/pages/signup.html"]:hover {
+  .header__nav-link[href="./pages/signup.html"]:hover {
     color: var(--primary-clr-blue);
   }
 
-  .header__nav-link[href="/pages/signin.html"]:active  {
+  .header__nav-link[href="./pages/signin.html"]:active  {
     color: var(--primary-clr-red);
   }
 
-  .header__nav-link[href="/pages/signup.html"]:active {
+  .header__nav-link[href="./pages/signup.html"]:active {
     color: var(--primary-clr-red);
   }
 
-  .header__nav-link[href="/pages/signup.html"] {
+  .header__nav-link[href="./pages/signup.html"] {
     color: var(--primary-clr-green);
     font-weight: bold;
   }
