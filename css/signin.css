@@ -37,6 +37,11 @@
   opacity: 0.6;
 }
 
+.auth__container-blk {
+  padding-top: clamp(15rem, 10rem, 20rem);
+  padding-bottom: 5rem;
+}
+
 .auth__heading {
   font-size: 2rem;
   font-weight: bold;
