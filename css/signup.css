@@ -7,7 +7,7 @@
 
   .user__auth {
     width: 100vw;
-    height: 100dvh;
+    min-height: 100dvh;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -39,7 +39,7 @@
   }
 
   .auth__container-blk {
-    width: 35rem;
+    max-width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
