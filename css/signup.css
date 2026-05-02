@@ -39,7 +39,7 @@
   }
 
   .auth__container-blk {
-    max-width: 35rem;
+    width: 35rem;
     display: flex;
     flex-direction: column;
     align-items: center;
