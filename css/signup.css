@@ -159,7 +159,7 @@
 
     .user__auth {
       width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
       display: grid;
       grid-template-columns: 1fr 30rem;
       place-items: center;
@@ -333,7 +333,7 @@
 
     .user__auth {
       width: 100vw;
-      height: 100vh;
+      min-height: 100dvh;
       display: grid;
       grid-template-columns: 1fr 40rem;
       place-items: center;
@@ -344,7 +344,7 @@
 
 
     .auth__video-blk {
-      height: 100vh;
+      height: 100%;
       display: flex;
       overflow: hidden;
     }
@@ -396,8 +396,16 @@
     }
 
     .auth__container-blk {
-      margin-top: 10rem;
+      padding-top: 20rem;
+      min-width: 35rem;
+      min-height: 100%;
+      ;
+      padding-bottom: 0rem;
+      background-color: var(--secondary-clr-white);
+
     }
+
+
 
     .auth__heading {
       font-size: 2.4rem;
