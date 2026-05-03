@@ -2,6 +2,20 @@
     --accent-clr-grey: #C4C4C4;
   }
 
+  /* Utilities */
+
+  .validation__status {
+    position: absolute;
+    color: var(--primary-clr-red);
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    right: 0;
+    bottom: -0.4rem;
+    left: 0.5rem;
+    font-size: 1.3rem;
+  }
+
   /* MOBILE */
 
 
@@ -66,6 +80,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2%;
+    position: relative;
   }
 
   .full-name {
