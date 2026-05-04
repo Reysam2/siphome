@@ -2,6 +2,37 @@
   --accent-clr-grey: #C4C4C4;
 }
 
+/* UTILITIES */
+
+  .validation__status {
+    position: absolute;
+    color: var(--primary-clr-red);
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+    right: 0;
+    bottom: -0.1rem;
+    left: 0.5rem;
+    font-size:clamp(1.4rem, 2.5vw, 1.5rem)
+  }
+
+  .invalid-password {
+    min-height: 20rem; 
+    margin-top: -6rem; 
+  }
+
+  .validation__status-invalid-password {
+    position: absolute;
+    color: var(--primary-clr-red);
+    width: 100%;
+    display: flex; 
+    right: 0;
+    bottom: -0.4rem;
+    left: 0.5rem;
+    font-size: 1.5rem;
+    white-space: pre-line;
+  }
+
 
 /*MOBILE */
 
@@ -57,6 +88,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2%;
+  position: relative;
 
 }
 
