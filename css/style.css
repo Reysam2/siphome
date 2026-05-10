@@ -117,6 +117,24 @@ textarea {
   bottom: -0.8rem;
   ;
 }
+ .header__auth-link-blk-active {
+  background: var(--primary-clr-black)!important;
+  display: flex!important;
+    /* gap: clamp(1rem, 2.5vw, 2rem)!important; */
+    gap: 0!important;
+
+ }
+
+.salute-active {
+  color: var(--primary-clr-white);
+
+}
+.user-name-active {
+  color: var(--primary-clr-green);
+  font-size: 1.8rem;
+  font-weight: 900;
+
+}
 
 /* MOBILE → DEFAULT */
 
