@@ -1888,6 +1888,7 @@ textarea {
     overflow: hidden;
     font-size: 1.4rem;
     display: none;
+    color: var(--primary-clr-black);
   }
 
   .user-menu-blk.user-menu-active {
@@ -1895,14 +1896,17 @@ textarea {
   }
 
   .user-info {
-    height: 8rem;
+    min-height: 8rem;
     min-width: 100%;
     margin-bottom: 0.2rem;
     display: grid;
     grid-template-columns: 10rem 1fr;
     gap: 0.3rem;
     font-size: 1.4rem;
-    padding: 2%;
+    padding: 5% 2%;
+    color: var(--primary-clr-black);
+    align-items: center;
+    border-bottom: 0.1rem solid var(--box-shadow-grey);
   }
 
   .user-img {
@@ -1911,17 +1915,19 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-
   }
 
-  .user-info-text {
+  .user-info__text-blk {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     gap: 1rem;
+  }
+
+  .user-info__text-name {
+    font-size: 1.5rem;
   }
 
 
@@ -1933,6 +1939,7 @@ textarea {
     gap: 1rem;
     margin-top: 2rem;
 
+
   }
 
   .user-item {
@@ -1942,13 +1949,13 @@ textarea {
     display: grid;
     grid-template-columns: 3rem 2fr 1fr;
     transition: all 0.125s ease-in;
-    padding: 2%;
+    padding: 3%;
     align-items: center;
+    cursor: pointer;
+
   }
 
-  .user-item:first-of-type {
-    border-top: 0.1rem solid var(--box-shadow-grey);
-  }
+
 
   .user-item:hover {
     background: #E5E7EB;
@@ -1965,6 +1972,24 @@ textarea {
     justify-content: flex-end;
     align-items: center;
     margin-right: 1rem
+  }
+
+  .user-logout {
+    transition: all 0.125s ease-out;
+  }
+
+
+  .user-logout .user-logout__text-blk,
+  .user-logout .loggout__svg-blk svg {
+    color: var(--primary-clr-red);
+    font-weight: bold
+  }
+
+
+  .user-logout:hover .user-logout__text-blk,
+  .user-logout:hover .loggout__svg-blk svg {
+    color: var(--primary-clr-blue);
+    font-weight: bold
   }
 
 

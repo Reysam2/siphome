@@ -210,8 +210,14 @@ function displayUserProfile() {
 
   const userProfileMenu = document.querySelector('.user-menu-blk');
   const userNameDisplay = document.querySelector('.user-name');
+  const userFullName = document.querySelector('.user-info__text-name')
+  const userEmail = document.querySelector('.user-info__text-email')
 
-  if (!userProfileMenu || !userNameDisplay) return;
+  if (!userProfileMenu || !userNameDisplay || !userFullName || !userEmail) return;
+
+  userFullName.textContent = userData.fullName ||`${userData.firstName} ${userData.lastName}`;
+  userEmail.textContent = userData.email;
+
 
   userNameDisplay.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -225,6 +231,8 @@ function displayUserProfile() {
   document.addEventListener('click', () => {
     userProfileMenu.classList.remove('user-menu-active');
   });
+
+
 }
 
 
