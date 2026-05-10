@@ -254,7 +254,7 @@ function logoutUser() {
   logOutBtn.addEventListener('click', () => {
     localStorage.setItem('userData', JSON.stringify(newData))
     userProfileMenu.classList.remove('user-menu-active');
-    window.location.href = '../pages/signin.html';
+    window.location.href = './pages/signin.html';
 
   })
 

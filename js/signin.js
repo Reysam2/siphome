@@ -9,9 +9,6 @@ const passwordInput = document.querySelector('#userPassword');
 
 const userData = JSON.parse(localStorage.getItem('userData')) || {}
 
-console.log(userData)
-
-
 
 // Event listeners
 emailInput.addEventListener('input', () => {
@@ -50,7 +47,6 @@ form.addEventListener('submit', (e) => {
      if (group) {
     createErrorNodes(group, message);
   }
-     console.log(message);
   }
 
 }) 
