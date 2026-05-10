@@ -1873,18 +1873,19 @@ textarea {
   }
 
   .user-menu-blk {
-    max-width: 27rem;
+    max-width: 28rem;
     max-height: calc(100vh - 24px);
     background-color: #F9FAFB;
-    margin-right: 40rem;
+    margin-right: 50rem;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 53rem;
+    left: 50.5rem;
     right: -90rem;
     top: 2.3rem;
     border-radius: 1rem;
+    border-top-right-radius: 0rem;
     overflow: hidden;
     font-size: 1.4rem;
     display: none;
@@ -1900,13 +1901,14 @@ textarea {
     min-width: 100%;
     margin-bottom: 0.2rem;
     display: grid;
-    grid-template-columns: 10rem 1fr;
+    grid-template-columns: 8rem 1fr;
     gap: 0.3rem;
     font-size: 1.4rem;
     padding: 5% 2%;
     color: var(--primary-clr-black);
     align-items: center;
     border-bottom: 0.1rem solid var(--box-shadow-grey);
+    font-weight: 600;
   }
 
   .user-img {
@@ -1928,8 +1930,14 @@ textarea {
 
   .user-info__text-name {
     font-size: 1.5rem;
+    min-width: 100%;
+    word-break: break-word;
   }
 
+  .user-info__text-email-blk {
+    min-width: 100%;
+    word-break: break-word;
+  }
 
 
   .user-menu {
@@ -1980,14 +1988,14 @@ textarea {
 
 
   .user-logout .user-logout__text-blk,
-  .user-logout .loggout__svg-blk svg {
+  .user-logout .logout__svg-blk svg {
     color: var(--primary-clr-red);
     font-weight: bold
   }
 
 
   .user-logout:hover .user-logout__text-blk,
-  .user-logout:hover .loggout__svg-blk svg {
+  .user-logout:hover .logout__svg-blk svg {
     color: var(--primary-clr-blue);
     font-weight: bold
   }
