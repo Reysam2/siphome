@@ -215,7 +215,7 @@ function displayUserProfile() {
 
   if (!userProfileMenu || !userNameDisplay || !userFullName || !userEmail) return;
 
-  userFullName.textContent = userData.fullName ||`${userData.firstName} ${userData.lastName}`;
+  userFullName.textContent = userData.fullName || `${userData.firstName} ${userData.lastName}`;
   userEmail.textContent = userData.email;
 
 
@@ -235,6 +235,32 @@ function displayUserProfile() {
 
 }
 
+/* =========================
+   LOG-OUT USER
+========================= */
+
+function logoutUser() {
+  let userData = getUserData();
+  const logOutBtn = document.querySelector('.user-logout')
+
+  const userProfileMenu = document.querySelector('.user-menu-blk');
+
+  if (!userData?.isLoggedIn || !logOutBtn || !userProfileMenu) return;
+  let newData = {
+    ...userData,
+    isLoggedIn: false
+  }
+
+  logOutBtn.addEventListener('click', () => {
+    localStorage.setItem('userData', JSON.stringify(newData))
+    userProfileMenu.classList.remove('user-menu-active');
+    window.location.href = '../pages/signin.html';
+
+  })
+
+
+}
+
 
 /* =========================
    INIT APP
@@ -246,6 +272,7 @@ function initApp() {
   initContactFormValidation();
   userLoginState();
   displayUserProfile();
+  logoutUser()
 }
 
 initApp();
