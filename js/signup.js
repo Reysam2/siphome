@@ -20,10 +20,7 @@ const userData = {
   password: null,
   isLoggedIn: false
 }
-
-console.log(userData)
-
-
+ 
 // Event listeners
 
 firstNameInput.addEventListener('input', () => {
@@ -84,7 +81,6 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('userData', JSON.stringify(userData))
     setTimeout(() => {
       window.location.href = '../index.html';
-      console.log(userData)
     }, 1000)
 
   }
