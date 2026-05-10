@@ -173,11 +173,15 @@ form.addEventListener('submit', (e) => {
  * If the user is logged in, it updates the display to greet the user with a message based on the time of the day and displays the user's first name. 
  * If the user is not logged in, the function will exit early without making any changes to the display.
  */
+
+function getUserData() {
+  return JSON.parse(localStorage.getItem('userData'));
+}
+
 function userLoginState() {
-  const userData = JSON.parse(localStorage.getItem('userData'));
-   
+  const userData = getUserData();
   if (!userData?.isLoggedIn) return
- 
+
   const loggedInHidden = document.querySelectorAll('.logged-in-hidden');
   const greetUserContainer = document.querySelector('.header__auth-link-blk')
   const saluteDisplay = document.querySelector('.salute');
@@ -211,7 +215,7 @@ function userLoginState() {
   }
 
   userNameDisplay.textContent = userData.firstName;
-  
+
   saluteDisplay.classList.add('salute-active');
   userNameDisplay.classList.add('user-name-active');
   greetUserContainer.classList.add('header__auth-link-blk-active')
@@ -219,3 +223,36 @@ function userLoginState() {
 }
 
 userLoginState()
+
+/*
+ * The function `displayUserProfile` handles displaying a user profile menu when the user clicks on their username.
+
+ * @returns If the user is not logged in or if either the userProfileMenu or userNameDisplay elements are not found in the document, the function will return early and not execute the rest of the code.
+ */
+
+function displayUserProfile() {
+  const userData = getUserData();
+  const userProfileMenu = document.querySelector('.user-menu-blk');
+  const userNameDisplay = document.querySelector('.user-name');
+
+  if (!userData?.isLoggedIn) return
+  if (!userProfileMenu || !userNameDisplay) return;
+
+
+  userNameDisplay.addEventListener('click', (e) => {
+    e.stopPropagation();
+    userProfileMenu.classList.toggle('user-menu-active');
+  });
+
+  userProfileMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', () => {
+    userProfileMenu.classList.remove('user-menu-active');
+  });
+
+}
+
+
+displayUserProfile()
