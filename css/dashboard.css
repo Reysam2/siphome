@@ -8,14 +8,45 @@
 .header {
   width: 100%;
   height: 10rem;
-  background-color: var(--primary-clr-blue);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-bottom: 2rem;
   padding: 2rem;
+  background: linear-gradient(var(--gradient-angle),
+      var(--primary-clr-blue),
+      var(--primary-clr-green),
+      var(--primary-clr-red),
+      var(--primary-clr-blue),
+      var(--primary-clr-black) 95%);
+
+  animation: gradient 30s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: forwards;
 
 }
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 30deg;
+  inherits: false;
+}
+
+
+@keyframes gradient {
+  from {
+    --gradient-angle: 30deg;
+  }
+
+  to {
+    --gradient-angle: 150deg;
+  }
+}
+
+
 
 .logo-blk {
   height: 100%;
@@ -284,6 +315,7 @@
   display: grid;
   grid-template: minmax(6rem, 8rem) 50px 1fr / 1fr;
   background-color: var(--lt-clr-gray);
+
 }
 
 .main__notification {
@@ -356,4 +388,77 @@
   border: 0.1rem solid var(--primary-clr-blue)
 }
 
- 
+
+/* Notification Search blk */
+.notification__search-blk {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification__search-input-blk {
+  min-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notification__search-icon-blk {
+  display: grid;
+  place-items: center;
+  margin-right: -3rem;
+  z-index: 2;
+}
+
+.notification__search-icon {
+  fill: var(--primary-clr-grey);
+
+}
+
+.notification__search-input {
+  padding: 0.5rem 2rem;
+  padding-left: 3.5rem;
+  min-width: 55%;
+  border: none;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 1.6rem;
+  background-color: var(--soft-steel-gray);
+}
+
+.notification__search-input::placeholder {
+  font-size: 1.4rem
+}
+
+
+/* Notification__display-blk */
+.notification__display-blk {
+  border: var(--outline);
+  padding: 0.5rem 2rem
+}
+
+.notification__category-blk {
+  min-height: 5rem;
+  min-width: 80%;
+  display: flex;
+}
+
+.notification__category {
+  width: 70%;
+  display: flex;
+  align-self: center;
+  gap: 2.5rem;
+}
+
+.category-btn {
+  width: 10rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5rem;
+  border: none;
+  font-weight: 600;
+  background-color: var(--secondary-clr-white);
+  color: var(--primary-clr-blue);
+  text-align: center;
+  border: 0.1rem solid var(--secondary-clr-blue)
+}

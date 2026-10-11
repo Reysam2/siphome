@@ -298,7 +298,46 @@
             </button>
           </div>
         </section>
-        <section></section>
+
+        <section class="notification__search-blk">
+          <div class="notification__search-input-blk">
+            <label
+              for="notification-search"
+              class="notification__search-icon-blk"
+            >
+              <svg
+                class="notification__search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10.5 19c1.98 0 3.81-.69 5.25-1.83L20 21.42l1.41-1.41-4.25-4.25a8.47 8.47 0 0 0 1.83-5.25c0-4.69-3.81-8.5-8.5-8.5S2 5.81 2 10.5 5.81 19 10.5 19m0-15c3.58 0 6.5 2.92 6.5 6.5S14.08 17 10.5 17 4 14.08 4 10.5 6.92 4 10.5 4"
+                />
+              </svg>
+            </label>
+            <input
+              class="notification__search-input"
+              type="search"
+              name="notification-search"
+              id="notification-search"
+              placeholder="Search notifications..."
+            />
+          </div>
+        </section>
+
+        <section class="notification__display-blk">
+          <div class="notification__category-blk">
+            <div class="notification__category">
+              <button class="category-btn all__category-btn">All</button>
+              <button class="category-btn unread__category-btn">Unread</button>
+              <button class="category-btn read__category-btn">Read</button>
+            </div>
+          </div>
+          <div class="notification__content-blk"></div>
+        </section>
       </section>
     </main>
   </body>
