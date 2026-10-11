@@ -43,6 +43,8 @@ textarea {
   --primary-clr-red: #fa4949;
   --primary-clr-ash: #DADEE6;
   --outline: 0.2rem solid red;
+  --lt-clr-gray: #f8f9fc;
+  --soft-steel-gray: #E0E5EB
 }
 
 /* UTILITY CLASSES */
