@@ -44,8 +44,9 @@ textarea {
   --primary-clr-ash: #DADEE6;
   --outline: 0.2rem solid red;
   --lt-clr-gray: #f8f9fc;
-  --soft-steel-gray: #E0E5EB; 
-  --primary-bg-gradient:linear-gradient(30deg,var(--primary-clr-green) , var(--primary-clr-blue), var(--primary-clr-red));
+  --primary-clr-glass-white: #EFF6FF;
+  --soft-steel-gray: #E0E5EB;
+  --primary-bg-gradient: linear-gradient(30deg, var(--primary-clr-green), var(--primary-clr-blue), var(--primary-clr-red));
 }
 
 /* UTILITY CLASSES */

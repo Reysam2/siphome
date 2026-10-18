@@ -311,18 +311,20 @@
 
 
 /* Notifications */
-.main__notification-blk { 
-  display: grid; 
-  grid-template: minmax(6rem, 8rem) 50px 1fr / 1fr;
+.main__notification-blk {
+  display: grid;
+  grid-template: minmax(6rem, 8rem) 50px 10rem / 1fr;
   background-color: var(--lt-clr-gray);
   overflow: hidden;
+  background-color: var(--primary-clr-glass-white);
+
 
 }
 
 .main__notification {
   display: flex;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
   min-height: 8rem;
   margin-bottom: 1rem;
 }
@@ -469,47 +471,75 @@
 
 /* Notification content */
 .notification__content-blk {
-  background-color: var(--secondary-clr-white);
+  background-color: var(--primary-clr-glass-white);
   border-radius: 0.5rem;
-  height: 37rem;
-  width: 85%;
+  min-height: 37rem;
+  min-width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
   border: 0.1rem solid var(--primary-clr-ash);
-  box-shadow: 0.2px 0.2px 0.2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0.2px 0.2px 0.2rem rgba(0, 0, 0, 0.9);
   padding: 1.5%;
   overflow-y: scroll;
-
-
 }
 
 .content__info {
+  background-color: var(--secondary-clr-white);
+  min-height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1%;
+  min-width: 70%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--primary-clr-blue);
+  line-height: 1.5;
+  box-shadow: 0.2rem 0.2rem 0.6rem rgb(7, 23, 122, 0.4);
+  transition: all 0.12s ease;
+}
+
+.content__info:hover {
+  scale: 1.01;
+}
+
+.content__info:active {
   background-color: var(--primary-clr-white);
-  min-height: 10rem;
-  max-height: 30px;
+  background-color: var(--primary-clr-glass-white);
+  min-height: max-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: start;
   padding: 1%;
   min-width: 70%;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--primary-clr-blue);
   line-height: 1.5;
   box-shadow: 0.2rem 0.2rem 1rem rgb(7, 23, 122, 0.7);
+
+  .content__info-text-blk p+p {
+    display: flex;
+  }
+
+  .content__info-heading {
+    margin-bottom: 0.25rem;
+  }
 }
 
-.content__info-heading-blk {
-  margin-bottom: 0.5rem; 
-}
+
 
 .content__info-heading {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .content__info-text-blk {
   color: var(--primary-clr-black);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+
+}
+
+.content__info-text-blk p+p {
+  display: none
 }
