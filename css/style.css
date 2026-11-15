@@ -14,7 +14,7 @@ html {
 
 body {
   max-width: 100%;
-  font-size: 1.8em;
+  font-size: 1.6em;
   background-color: var(--primary-clr-white);
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -42,6 +42,7 @@ textarea {
   --primary-clr-black: #262b36;
   --primary-clr-red: #fa4949;
   --primary-clr-ash: #DADEE6;
+   --primary-clr-gray-50: oklch(95.654% 0.00807 254.09);
   --outline: 0.2rem solid red;
   --lt-clr-gray: #f8f9fc;
   --primary-clr-glass-white: #EFF6FF;
