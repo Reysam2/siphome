@@ -550,12 +550,13 @@
 .main__billing-info-blk {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   background-color: var(--primary-clr-gray-50);
-  border-left: 0.2rem solid var(--primary-clr-ash)
+  border-left: 0.2rem solid var(--primary-clr-ash);
+  place-items: center;
 }
 
-.billing__active-plan-blk { 
+.billing__active-plan-blk {
   width: 100%;
 }
 
@@ -586,7 +587,7 @@
   font-weight: bold;
 }
 
-.active-plan__type-blk { 
+.active-plan__type-blk {
   display: grid;
   place-items: center;
 }
@@ -610,7 +611,7 @@
 .billing__active-plan-info-blk {
   width: 100%;
   min-height: 10rem;
-  margin-top: 2rem; 
+  margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -670,6 +671,7 @@
   justify-content: space-around;
   pointer-events: none;
 }
+
 .plan__expiration-date-text {
   font-size: 1.5rem;
 }
@@ -709,4 +711,105 @@
 .subscription-info-text {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/*BILLING - Payment History */
+
+.payment__history-heading-blk {
+  width: 100%;
+  min-height: 4rem;
+  border-bottom: 0.1rem solid var(--primary-clr-black);
+  display: flex;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  padding: 0 2%;
+  border-radius: 3rem 3rem 0 0;
+}
+
+.payment__history-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+
+}
+
+.billing__payment-history-blk {
+  width: 100%;
+  height: 35rem;
+  padding: 0 2%;
+
+}
+
+.payment__history-blk {
+  width: 100%;
+  height: 30rem;
+  padding: 3%;
+  overflow-y: scroll;
+}
+
+.payment__history {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 15rem 8rem;
+  grid-template-rows: 6rem;
+  gap: 1.6rem;
+  justify-items: center;
+  align-items: center;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  border-bottom: 0.1rem solid var(--primary-clr-black);
+  margin-bottom: 1.5rem;
+  transition: all 0.125s ease;
+}
+
+.payment__history:hover {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.6);
+  background: var(--primary-clr-glass-white);
+
+}
+
+.history-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 0;
+  gap: 0.5rem
+}
+
+.history-box__heading {
+  font-size: 1.5rem;
+  color: var(--primary-clr-black);
+  font-weight: bold;
+  ;
+}
+
+.history-box p+p {
+  color: var(--secondary-clr-grey)
+}
+
+.history-box__payment-method-img-blk {
+  width: 7rem;
+  ;
+}
+
+.payment-method__img,
+.history-box__print-img {
+  height: auto;
+  width: 100%;
+}
+
+.history-box__print-img-blk {
+  width: 3rem;
+  transition: all 0.125s ease-in-out;
+  user-select: none;
+}
+
+.history-box__print-img {
+  cursor: pointer;
+}
+
+.history-box__print-img:hover {
+  scale: 1.1
+}
+
+.history-box__print-img:active {
+  scale: 1;
 }
